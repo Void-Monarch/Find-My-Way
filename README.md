@@ -15,3 +15,9 @@ Welcome to Find My Way, a Node.js web application designed to provide valuable i
    ```bash
    git clone https://github.com/your-username/find-my-way.git](https://github.com/Harsh-nodejs/Project-App.git)https://github.com/Harsh-nodejs/Project-App.git
    cd Project-App
+   ```
+3. Install the node js depedencies from package.json :
+   ```bash
+   npm install
+   ```
+   
