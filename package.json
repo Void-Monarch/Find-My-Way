@@ -4,7 +4,9 @@
   "description": "A tech expo project , The goal of this web application is to provide information to disabled individuals to enchance there living conditions, including tips, jobs etc..",
   "main": "app.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon server.js",
+    "debug": "ndb server.js"
   },
   "author": "Harsh Parashar",
   "license": "ISC",
@@ -16,12 +18,13 @@
     "eslint-plugin-jsx-a11y": "^6.8.0",
     "eslint-plugin-node": "^11.1.0",
     "eslint-plugin-prettier": "^5.1.3",
-    "eslint-plugin-react": "^7.33.2"
+    "eslint-plugin-react": "^7.33.2",
+    "ndb": "^1.1.5"
   },
   "dependencies": {
     "bcryptjs": "^2.4.3",
     "cookie-parser": "^1.4.6",
-    "dotnet": "^1.1.4",
+    "dotenv": "^16.3.1",
     "express": "^4.18.2",
     "express-mongo-sanitize": "^2.2.0",
     "express-rate-limit": "^7.1.5",

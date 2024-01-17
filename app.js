@@ -7,8 +7,8 @@ const xss = require('xss-clean');
 const cookieParser = require('cookie-parser');
 const hpp = require('hpp');
 const path = require('path');
-const AppError = require('./utils/appError');
-const globalErrorHandler = require('./controllers/errorController');
+// const AppError = require('./utils/appError');
+// const globalErrorHandler = require('./controllers/errorController');
 
 const app = express();
 
@@ -61,8 +61,11 @@ app.use((req, res, next) => {
 });
 
 // 3) ROUTES
+app.get('/',(req,res)=>{
+  res.send("Server is ON!!")
+})
 
 
-app.use(globalErrorHandler);
+// app.use(globalErrorHandler);
 
 module.exports = app;
