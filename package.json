@@ -1,0 +1,11 @@
+{
+  "name": "findmyway",
+  "version": "1.0.0",
+  "description": "A tech expo project , The goal of this web application is to provide information to disabled individuals to enchance there living conditions, including tips, jobs etc..",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Harsh Parashar",
+  "license": "ISC"
+}
