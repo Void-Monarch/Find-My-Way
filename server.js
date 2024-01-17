@@ -17,12 +17,12 @@ const DB = process.env.DATABASE.replace(
 
 mongoose
   .connect(DB, {})
-  .then(() => console.log('[+] DB connection successful!'));
+  .then(() => console.log('[+] DB connection successful! | Connected with [findmyway] database\n'));
 
 const port = process.env.PORT || 3000;
 const server = app.listen(port, () => {
   console.log(
-    `\n[+] App running on port ${port}...\n\n[+] Go to http://127.0.0.1:3000`,
+    `\n[+] App running on port ${port}...\n[+] Go to http://127.0.0.1:${port}`,
   );
 });
 
