@@ -13,5 +13,5 @@ Welcome to Find My Way, a Node.js web application designed to provide valuable i
 1. Make sure you have [Node.js](https://nodejs.org/) installed on your machine.
 2. Clone the repository:
    ```bash
-   git clone https://github.com/your-username/find-my-way.git
-   cd find-my-way
+   git clone https://github.com/your-username/find-my-way.git](https://github.com/Harsh-nodejs/Project-App.git)https://github.com/Harsh-nodejs/Project-App.git
+   cd Project-App
