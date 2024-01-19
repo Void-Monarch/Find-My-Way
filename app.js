@@ -9,6 +9,8 @@ const hpp = require('hpp');
 const path = require('path');
 // const AppError = require('./utils/appError');
 // const globalErrorHandler = require('./controllers/errorController');
+const userRouter = require('./routes/API/userRoute');
+const viewRouter = require('./routes/View/userViewRoute');
 
 const app = express();
 
@@ -22,7 +24,7 @@ if (process.env.NODE_ENV === 'development') {
   app.use(morgan('dev'));
 }
 
-app.set('view engine', 'pug');
+app.set('view engine', 'ejs');
 app.set('views', path.join(__dirname, 'views'));
 
 // Limit requests from same API
@@ -61,10 +63,15 @@ app.use((req, res, next) => {
 });
 
 // 3) ROUTES
-app.get('/',(req,res)=>{
-  res.send("Server is ON!!")
-})
+// 3.1 API Routes
+app.use('/api/v1/user', userRouter);
 
+// 3.2 View Routes
+app.use('/', viewRouter);
+
+app.get('/', (req, res) => {
+  res.send('Server is ON!!');
+});
 
 // app.use(globalErrorHandler);
 
