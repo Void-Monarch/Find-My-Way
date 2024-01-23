@@ -16,7 +16,13 @@ const app = express();
 
 // 1) GLOBAL MIDDLEWARES
 // Set security HTTP headers
-app.use(helmet());
+app.use(
+  helmet({
+    contentSecurityPolicy: false,
+  }),
+);
+
+// cookie parser
 app.use(cookieParser());
 
 // Development logging
