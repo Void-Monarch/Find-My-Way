@@ -1902,9 +1902,11 @@ Object.defineProperty(exports, "anime", {
   }
 });
 
-var _animejs = _interopRequireDefault(require("animejs"));
+var _animejs = _interopRequireWildcard(require("animejs"));
 
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+function _getRequireWildcardCache(e) { if ("function" != typeof WeakMap) return null; var r = new WeakMap(), t = new WeakMap(); return (_getRequireWildcardCache = function (e) { return e ? t : r; })(e); }
+
+function _interopRequireWildcard(e, r) { if (!r && e && e.__esModule) return e; if (null === e || "object" != typeof e && "function" != typeof e) return { default: e }; var t = _getRequireWildcardCache(r); if (t && t.has(e)) return t.get(e); var n = { __proto__: null }, a = Object.defineProperty && Object.getOwnPropertyDescriptor; for (var u in e) if ("default" !== u && Object.prototype.hasOwnProperty.call(e, u)) { var i = a ? Object.getOwnPropertyDescriptor(e, u) : null; i && (i.get || i.set) ? Object.defineProperty(n, u, i) : n[u] = e[u]; } return n.default = e, t && t.set(e, n), n; }
 
 // Elements
 var slides = document.querySelectorAll('.slide'); // ANIMATIONS
@@ -1932,6 +1934,32 @@ var slides = document.querySelectorAll('.slide'); // ANIMATIONS
     duration: 2000,
     delay: 200
   }
+});
+var allEnter = document.querySelectorAll('.enter--all'); // Foe the Enter Office SVG
+
+var enterE = (0, _animejs.default)({
+  targets: allEnter,
+  translateY: {
+    value: function value(e, i, t) {
+      return ["-".concat(100 * i, "%"), "-=10%"];
+    },
+    delay: function delay(e, i) {
+      return 100 * i;
+    }
+  },
+  opacity: {
+    value: function value(e, i, t) {
+      return [0, 1];
+    },
+    delay: function delay(e, i) {
+      return 150 * i;
+    },
+    duration: function duration(e, i) {
+      return 1300;
+    },
+    easings: 'cubicBezier(.5, .05, .1, .3)'
+  },
+  autoplay: false
 });
 },{"animejs":"../../node_modules/animejs/lib/anime.es.js"}],"index.js":[function(require,module,exports) {
 "use strict";

@@ -1,4 +1,2 @@
 import { anime } from './AnimeScript';
 
-
-

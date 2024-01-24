@@ -24,25 +24,37 @@
           <img
             src="/assets/enter-prof.png"
             alt=""
-            class="object-fit max-h-96 enter--1"
+            class="object-fit max-h-96 enter--all enter--1"
           />
           <img
             src="/assets/enter-prof-red-dress.png"
             alt=""
-            class="object-fit max-h-96 enter--2"
+            class="object-fit max-h-96 enter--all enter--2"
           />
           <img
             src="/assets/enter-prof-blue-dress.png"
             alt=""
-            class="object-fit max-h-96 enter--3"
+            class="object-fit max-h-96 enter--all enter--3"
           />
           <img
             src="/assets/enter-prof-blue-suit.png"
             alt=""
-            class="object-fit max-h-96 enter--4"
+            class="object-fit max-h-96 enter--all enter--4"
           />
         </div>
       </div>
     </div>
   </div>
 </section>
+<script>
+  const adjust = () => {
+    const img = document.querySelector('.enter--1');
+    const figureDiv = document.querySelector('.figure--enter');
+
+    let imgh = img.getClientRects()[0].height;
+
+    figureDiv.setAttribute('style', `height : ${imgh}px `);
+  };
+  window.addEventListener('load', adjust);
+  window.addEventListener('resize', adjust);
+</script>

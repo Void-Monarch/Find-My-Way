@@ -688,6 +688,10 @@ video {
   display: block;
 }
 
+.inline-block {
+  display: inline-block;
+}
+
 .inline {
   display: inline;
 }
@@ -740,6 +744,18 @@ video {
   height: 12rem;
 }
 
+.h-96 {
+  height: 24rem;
+}
+
+.h-44 {
+  height: 11rem;
+}
+
+.h-6 {
+  height: 1.5rem;
+}
+
 .max-h-32 {
   max-height: 8rem;
 }
@@ -776,8 +792,16 @@ video {
   max-width: 1536px;
 }
 
+.resize {
+  resize: both;
+}
+
 .list-none {
   list-style-type: none;
+}
+
+.grid-cols-1 {
+  grid-template-columns: repeat(1, minmax(0, 1fr));
 }
 
 .flex-row {
