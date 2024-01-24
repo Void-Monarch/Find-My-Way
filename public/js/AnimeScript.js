@@ -11,7 +11,7 @@ anime({
   targets: '#hr--hero-below',
   width: '50%',
   delay: 200,
-  duration: 1200,
+  duration: 2000,
 });
 
 anime({
@@ -31,7 +31,7 @@ anime({
   },
   translateY: {
     value: ['20%', 0],
-    duration: 2000,
+    duration: 3000,
     delay: 200,
   },
 });
@@ -66,7 +66,7 @@ const enterE = anime({
 
     easings: 'cubicBezier(.5, .05, .1, .3)',
   },
-  autoplay: false,
+  // autoplay: false,
 });
 
 export { anime };
