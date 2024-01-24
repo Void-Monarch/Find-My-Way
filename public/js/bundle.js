@@ -1889,7 +1889,8 @@ anime.random = function (min, max) {
 
 var _default = exports.default = anime;
 },{}],"AnimeScript.js":[function(require,module,exports) {
-"use strict";
+/* eslint-disable */
+'use strict';
 
 Object.defineProperty(exports, "__esModule", {
   value: true
@@ -1905,12 +1906,14 @@ var _animejs = _interopRequireDefault(require("animejs"));
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-/* eslint-disable */
-var el = document.querySelectorAll('.slide');
-console.log(el);
+// Elements
+var slides = document.querySelectorAll('.slide'); // ANIMATIONS
+
 (0, _animejs.default)({
-  targets: el,
-  translateX: 500
+  targets: '#hr--hero-below',
+  width: '50%',
+  delay: 200,
+  duration: 1200
 });
 },{"animejs":"../../node_modules/animejs/lib/anime.es.js"}],"index.js":[function(require,module,exports) {
 "use strict";

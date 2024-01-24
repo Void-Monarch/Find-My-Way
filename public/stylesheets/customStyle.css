@@ -7,22 +7,6 @@
   }
 }
 
-@keyframes expand {
-  from {
-    width: 0%;
-  }
-  to {
-    width: 50%;
-  }
-}
-
 body {
-  animation: fader 1.8s ease-in;
-  transition: all 2s;
-}
-
-#hr--hero-below {
-  width: 50%;
-  animation: expand 0.5s ease-in 0.5s;
-  transition: all 1s;
+  /* animation: fader 1s; */
 }

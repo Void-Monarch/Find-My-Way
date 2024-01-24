@@ -1,13 +1,17 @@
 /* eslint-disable */
+'use strict';
 
 import anime from 'animejs';
 
-const el = document.querySelectorAll('.slide');
-console.log(el);
+// Elements
+const slides = document.querySelectorAll('.slide');
 
+// ANIMATIONS
 anime({
-  targets: el,
-  translateX: 500,
+  targets: '#hr--hero-below',
+  width: '50%',
+  delay: 200,
+  duration: 1200,
 });
 
 export { anime };
