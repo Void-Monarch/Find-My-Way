@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link href="/stylesheets/style.css" rel="stylesheet" />
+    <link href="/stylesheets/customStyle.css" rel="stylesheet" />
     <link
       href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.2.1/flowbite.min.css"
       rel="stylesheet"
@@ -14,10 +15,10 @@
   <body>
     <header class="navbar-header"><%- include('./partials/_nav') %></header>
 
-    <%- include('./partials/_hero') %>
+    <%- include('./partials/_hero') %> <%- include('./partials/_partner_slider')%>
 
-    <%- include('./partials/_partner_slider') %>
-
+    <!-- Scripts Import  -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.2.1/flowbite.min.js"></script>
+    <script src="/js/AnimeScript.js"></script>
   </body>
 </html>
