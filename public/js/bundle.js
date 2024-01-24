@@ -1915,6 +1915,24 @@ var slides = document.querySelectorAll('.slide'); // ANIMATIONS
   delay: 200,
   duration: 1200
 });
+(0, _animejs.default)({
+  targets: '.slider',
+  height: '135px',
+  duration: 2000
+});
+(0, _animejs.default)({
+  targets: '#hero-img',
+  opacity: {
+    value: [0, 1],
+    duration: 3000,
+    delay: 200
+  },
+  translateY: {
+    value: ['20%', 0],
+    duration: 2000,
+    delay: 200
+  }
+});
 },{"animejs":"../../node_modules/animejs/lib/anime.es.js"}],"index.js":[function(require,module,exports) {
 "use strict";
 
