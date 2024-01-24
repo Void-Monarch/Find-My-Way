@@ -1,8 +1,6 @@
-'use strict';
+/* eslint-disable */
 
-const anime = require('animejs');
+import anime from 'animejs/lib/anime.es.js';
 
-anime({
-  targets: '.slide',
-  translateX: 250,
-});
+const el = document.querySelectorAll('.slide');
+console.log(el);
