@@ -40,6 +40,10 @@
   }
 }
 
+#section--2 {
+  clip-path: polygon(12% 0, 100% 0, 100% 82%, 88% 99%, 0 100%, 0 15%);
+}
+
 #interact {
 }
 #interact-tab-1 {
@@ -47,4 +51,8 @@
 }
 #interact-person-1 {
   transform: translateY(-200%);
+}
+
+.drawer-navigation {
+  transition: all 1s;
 }

@@ -10540,6 +10540,7 @@ var sideBaritem = exports.sideBaritem = (0, _animejs.default)({
       start: 3000
     })
   },
+  direction: 'alternate',
   autoplay: false
 });
 },{"animejs":"../../node_modules/animejs/lib/anime.es.js","validator":"../../node_modules/validator/index.js"}],"revealFuction.js":[function(require,module,exports) {

@@ -6,5 +6,9 @@ const router = express.Router();
 
 router.route('/').get(viewController.getOverview);
 
+router
+  .route('/login')
+  .get(authController.isLoggedIn, viewController.getLoginForm);
+
 // Exporting The
 module.exports = router;
