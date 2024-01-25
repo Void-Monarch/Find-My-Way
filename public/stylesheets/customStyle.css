@@ -39,3 +39,12 @@
     transition: all 1s;
   }
 }
+
+#interact {
+}
+#interact-tab-1 {
+  transform: translateY(-100%);
+}
+#interact-person-1 {
+  transform: translateY(-200%);
+}

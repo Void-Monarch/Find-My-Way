@@ -99,4 +99,18 @@ const img_career = anime({
   autoplay: false,
 });
 
-export { anime, enterE, enterE_text, img_career };
+const interact_img = anime({
+  targets: '#interact--img',
+  translateY: {
+    value: ['15%', 0],
+    duration: 1000,
+    easing: 'cubicBezier(.5, .05, .1, .3)',
+  },
+  opacity: {
+    value: [0, 1],
+    duration: 2000,
+  },
+  autoplay: false,
+});
+
+export { anime, enterE, enterE_text, img_career ,interact_img };

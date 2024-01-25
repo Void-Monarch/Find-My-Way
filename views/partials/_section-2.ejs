@@ -1,9 +1,9 @@
 <section
-  class="mt-24 mb-24 bg-gradient-to-br from-purple-500 to-purple-300"
+  class="mt-24 mb-24 bg-gradient-to-br from-purple-500 to-purple-400"
   id="section--2"
 >
   <div
-    class="flex items-center justify-center w-full relative flex-col xs:p-10 sm:p-20"
+    class="flex items-center justify-center w-full relative flex-col xss:p-6 xs:p-10 sm:p-20"
   >
     <div
       class="flex items-center justify-center xss:flex-col sm:flex-row sm:space-x-12 sm:space-y-5"
@@ -21,11 +21,11 @@
       </div>
     </div>
     <div
-      class="flex items-center justify-center xss:flex-col-reverse sm:mt-4 sm:flex-row sm:space-x-12 sm:space-y-5"
+      class="flex items-center justify-center xss:flex-col-reverse sm:mt-4 md:mt-10 sm:flex-row sm:space-x-12 sm:space-y-5"
       id="flexrow--2"
     >
       <div
-        class="enter__text xss:mb-4 xss:text-sm sm:text-base xss:text-justify 2xl:text-xl"
+        class="enter__text xss:mb-4 xss:text-sm sm:text-base xss:text-justify 2xl:text-2xl"
       >
         Lorem ipsum dolor sit amet consectetur, adipisicing elit. Odio aperiam
         nihil deserunt at nulla perspiciatis eligendi rerum itaque qui hic
@@ -59,27 +59,56 @@
       </div>
     </div>
     <!-- center Element -->
-    <div class="flex items-center justify-center flex-col">
-      <div class="xs:m-8 lg:m-24">
-        <img src="/assets/interact.png" alt="" class="object-fit 2xl:h-128" />
+    <div class="flex items-center justify-center flex-col max-w-[80%]">
+      <div
+        class="xs:m-8 lg:m-16 xl:mt-24 xl:ml-24 xl:mr-24 xl:mb-16"
+        id="interact--img"
+      >
+      <div class="interact-figure-div">
+        <img
+          src="/assets/interact.png"
+          alt=""
+          class="object-fit md:h-80 lg:h-96 xl:h-128"
+          id="interact"
+        />
+        <img
+        src="/assets/interact-tab-1.png"
+        alt=""
+        class="object-fit md:h-80 lg:h-96 xl:h-128"
+        id="interact-tab-1"
+      />
+        <img
+        src="/assets/interact-person-1.png"
+        alt=""
+        class="object-fit md:h-80 lg:h-96 xl:h-128"
+        id="interact-person-1"
+      />
+    </div>
       </div>
-      <div class="xss:text-sm sm:text-base xss:text-justify 2xl:text-xl">
-        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Odio aperiam
-        nihil deserunt at nulla perspiciatis eligendi rerum itaque qui hic
-        tempora, nisi reiciendis, sequi corrupti, fugiat voluptatum architecto
-        sunt dolorum.
+      <div class="text-center">
+        <span class="xl:text-xl 2xl:text-2xl">
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Odio aperiam
+          nihil deserunt at nulla perspiciatis eligendi rerum itaque qui hic
+          tempora, nisi reiciendis, sequi corrupti, fugiat voluptatum architecto
+          sunt dolorum.
+        </span>
       </div>
     </div>
   </div>
 </section>
+
 <script>
   const adjust = () => {
     const img = document.querySelector('.enter--1');
+    const img2 = document.querySelector('#interact');
     const figureDiv = document.querySelector('.figure--enter');
+    const figureDiv2 = document.querySelector('.interact-figure-div');
 
     let imgh = img.getClientRects()[0].height;
+    let imgh2 = img2.getClientRects()[0].height;
 
     figureDiv.setAttribute('style', `height : ${imgh}px `);
+    figureDiv2.setAttribute('style', `height : ${imgh2}px `);
   };
   window.addEventListener('load', adjust);
   window.addEventListener('resize', adjust);

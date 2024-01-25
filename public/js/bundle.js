@@ -10413,7 +10413,7 @@ Object.defineProperty(exports, "anime", {
     return _animejs.default;
   }
 });
-exports.img_career = exports.enterE_text = exports.enterE = void 0;
+exports.interact_img = exports.img_career = exports.enterE_text = exports.enterE = void 0;
 
 var _animejs = _interopRequireWildcard(require("animejs"));
 
@@ -10505,13 +10505,26 @@ var img_career = exports.img_career = (0, _animejs.default)({
   },
   autoplay: false
 });
+var interact_img = exports.interact_img = (0, _animejs.default)({
+  targets: '#interact--img',
+  translateY: {
+    value: ['15%', 0],
+    duration: 1000,
+    easing: 'cubicBezier(.5, .05, .1, .3)'
+  },
+  opacity: {
+    value: [0, 1],
+    duration: 2000
+  },
+  autoplay: false
+});
 },{"animejs":"../../node_modules/animejs/lib/anime.es.js","validator":"../../node_modules/validator/index.js"}],"revealFuction.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-exports.reveal_img_career = exports.revealEnterOffice = void 0;
+exports.reveal_interact_img = exports.reveal_img_career = exports.revealEnterOffice = void 0;
 
 var _AnimeScript = require("./AnimeScript");
 
@@ -10572,6 +10585,28 @@ var reveal_img_career = exports.reveal_img_career = function reveal_img_career()
   });
   sectionObserver.observe(career_img);
 };
+
+var reveal_interact_img = exports.reveal_interact_img = function reveal_interact_img() {
+  var inter_img = document.querySelector('#interact--img');
+
+  var revealSection = function revealSection(entries, observer) {
+    var _entries3 = _slicedToArray(entries, 1),
+        entry = _entries3[0];
+
+    if (!entry.isIntersecting) return;
+
+    _AnimeScript.interact_img.play();
+
+    observer.unobserve(entry.target);
+  };
+
+  var sectionObserver = new IntersectionObserver(revealSection, {
+    root: null,
+    rootMargin: "0px",
+    threshold: 0.5
+  });
+  sectionObserver.observe(inter_img);
+};
 },{"./AnimeScript":"AnimeScript.js"}],"index.js":[function(require,module,exports) {
 "use strict";
 
@@ -10581,6 +10616,7 @@ var _revealFuction = require("./revealFuction");
 
 (0, _revealFuction.revealEnterOffice)();
 (0, _revealFuction.reveal_img_career)();
+(0, _revealFuction.reveal_interact_img)();
 },{"./AnimeScript":"AnimeScript.js","./revealFuction":"revealFuction.js"}],"../../node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
 var global = arguments[3];
 var OVERLAY_ID = '__parcel__error__overlay__';
@@ -10609,7 +10645,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "26737" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "46586" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};

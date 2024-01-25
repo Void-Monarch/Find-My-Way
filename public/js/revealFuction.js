@@ -1,4 +1,10 @@
-import { anime, enterE, enterE_text, img_career } from './AnimeScript';
+import {
+  anime,
+  enterE,
+  enterE_text,
+  img_career,
+  interact_img,
+} from './AnimeScript';
 
 const revealEnterOffice = () => {
   const Sections2 = document.querySelector('#flexrow--2');
@@ -41,4 +47,24 @@ const reveal_img_career = () => {
   sectionObserver.observe(career_img);
 };
 
-export { revealEnterOffice, reveal_img_career };
+const reveal_interact_img = () => {
+  const inter_img = document.querySelector('#interact--img');
+
+  const revealSection = function (entries, observer) {
+    const [entry] = entries;
+    if (!entry.isIntersecting) return;
+
+    interact_img.play();
+
+    observer.unobserve(entry.target);
+  };
+  const sectionObserver = new IntersectionObserver(revealSection, {
+    root: null,
+    rootMargin: `0px`,
+    threshold: 0.5,
+  });
+
+  sectionObserver.observe(inter_img);
+};
+
+export { revealEnterOffice, reveal_img_career, reveal_interact_img };

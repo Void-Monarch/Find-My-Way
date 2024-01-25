@@ -714,6 +714,26 @@ video {
   max-width: 1536px;
 }
 
+.max-w-256 {
+  max-width: 64rem;
+}
+
+.max-w-\[\] {
+  max-width: ;
+}
+
+.max-w-\[80\$\] {
+  max-width: 80$;
+}
+
+.max-w-\[80\%\] {
+  max-width: 80%;
+}
+
+.max-w-\[50\%\] {
+  max-width: 50%;
+}
+
 .resize {
   resize: both;
 }
@@ -874,6 +894,10 @@ video {
   --tw-gradient-to: #d8b4fe var(--tw-gradient-to-position);
 }
 
+.to-purple-400 {
+  --tw-gradient-to: #c084fc var(--tw-gradient-to-position);
+}
+
 .object-contain {
   -o-object-fit: contain;
      object-fit: contain;
@@ -914,6 +938,10 @@ video {
 
 .text-center {
   text-align: center;
+}
+
+.text-justify {
+  text-align: justify;
 }
 
 .text-2xl {
@@ -1045,6 +1073,10 @@ video {
 
   .xss\:p-2 {
     padding: 0.5rem;
+  }
+
+  .xss\:p-6 {
+    padding: 1.5rem;
   }
 
   .xss\:text-justify {
@@ -1195,6 +1227,10 @@ video {
     margin-top: 0px;
   }
 
+  .md\:mt-10 {
+    margin-top: 2.5rem;
+  }
+
   .md\:inline {
     display: inline;
   }
@@ -1209,6 +1245,10 @@ video {
 
   .md\:h-48 {
     height: 12rem;
+  }
+
+  .md\:h-80 {
+    height: 20rem;
   }
 
   .md\:w-auto {
@@ -1269,8 +1309,8 @@ video {
 }
 
 @media (min-width: 1024px) {
-  .lg\:m-24 {
-    margin: 6rem;
+  .lg\:m-16 {
+    margin: 4rem;
   }
 
   .lg\:mr-24 {
@@ -1324,12 +1364,40 @@ video {
 }
 
 @media (min-width: 1280px) {
+  .xl\:m-24 {
+    margin: 6rem;
+  }
+
   .xl\:mr-40 {
     margin-right: 10rem;
   }
 
+  .xl\:mt-24 {
+    margin-top: 6rem;
+  }
+
+  .xl\:ml-24 {
+    margin-left: 6rem;
+  }
+
+  .xl\:mr-24 {
+    margin-right: 6rem;
+  }
+
+  .xl\:mb-24 {
+    margin-bottom: 6rem;
+  }
+
+  .xl\:mb-16 {
+    margin-bottom: 4rem;
+  }
+
   .xl\:h-112 {
     height: 28rem;
+  }
+
+  .xl\:h-128 {
+    height: 32rem;
   }
 
   .xl\:h-56 {
@@ -1348,15 +1416,21 @@ video {
   .xl\:max-w-lg {
     max-width: 32rem;
   }
+
+  .xl\:text-2xl {
+    font-size: 1.5rem;
+    line-height: 2rem;
+  }
+
+  .xl\:text-xl {
+    font-size: 1.25rem;
+    line-height: 1.75rem;
+  }
 }
 
 @media (min-width: 1536px) {
   .\32xl\:mr-48 {
     margin-right: 12rem;
-  }
-
-  .\32xl\:h-128 {
-    height: 32rem;
   }
 
   .\32xl\:h-max {
@@ -1376,6 +1450,33 @@ video {
   .\32xl\:text-xl {
     font-size: 1.25rem;
     line-height: 1.75rem;
+  }
+
+  .\32xl\:text-2xl {
+    font-size: 1.5rem;
+    line-height: 2rem;
+  }
+}
+
+@media (min-width: 1600px) {
+  .\33xl\:text-9xl {
+    font-size: 8rem;
+    line-height: 1;
+  }
+
+  .\33xl\:text-xl {
+    font-size: 1.25rem;
+    line-height: 1.75rem;
+  }
+
+  .\33xl\:text-3xl {
+    font-size: 1.875rem;
+    line-height: 2.25rem;
+  }
+
+  .\33xl\:text-2xl {
+    font-size: 1.5rem;
+    line-height: 2rem;
   }
 }
 
