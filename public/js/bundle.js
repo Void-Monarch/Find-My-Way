@@ -10531,16 +10531,18 @@ var interact_pulse = exports.interact_pulse = (0, _animejs.default)({
   direction: 'alternate',
   loop: true,
   easing: 'linear'
-});
+}); // Sidebar Animation
+
 var sideBaritem = exports.sideBaritem = (0, _animejs.default)({
   targets: '.side-menu-item',
   translateX: {
-    value: ['-10%', '0%'],
-    delay: _animejs.default.stagger(200, {
-      start: 3000
+    value: ['-15%', '0%'],
+    delay: _animejs.default.stagger(80, {
+      start: 100
     })
   },
-  direction: 'alternate',
+  opacity: [0, 1],
+  duration: 1200,
   autoplay: false
 });
 },{"animejs":"../../node_modules/animejs/lib/anime.es.js","validator":"../../node_modules/validator/index.js"}],"revealFuction.js":[function(require,module,exports) {
@@ -10632,6 +10634,45 @@ var reveal_interact_img = exports.reveal_interact_img = function reveal_interact
   });
   sectionObserver.observe(inter_img);
 };
+},{"./AnimeScript":"AnimeScript.js"}],"sideBarAnime.js":[function(require,module,exports) {
+"use strict";
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.sideItemIn = exports.itemSwell = void 0;
+
+var _AnimeScript = require("./AnimeScript");
+
+var items = document.querySelectorAll('.side-menu-item');
+
+var sideItemIn = exports.sideItemIn = function () {
+  var hamburgerIN = document.querySelector('#sideMenuBtn');
+  var hamburgerOUT = document.querySelector('#sideMenuBtnCls'); // Event Listener
+
+  hamburgerIN.addEventListener('click', function () {
+    _AnimeScript.sideBaritem.play();
+  });
+  hamburgerOUT.addEventListener('click', function () {
+    _AnimeScript.sideBaritem.reset();
+
+    items.forEach(function (e) {
+      e.classList.remove('side-menu-item-2');
+    });
+  });
+}();
+
+var itemSwell = exports.itemSwell = function () {
+  items.forEach(function (e) {
+    e.addEventListener('mouseover', function (el) {
+      e.classList.add('expandNow');
+      e.classList.add('side-menu-item-2');
+    });
+    e.addEventListener('mouseleave', function (el) {
+      e.classList.remove('expandNow');
+    });
+  });
+}();
 },{"./AnimeScript":"AnimeScript.js"}],"index.js":[function(require,module,exports) {
 "use strict";
 
@@ -10639,10 +10680,12 @@ var _AnimeScript = require("./AnimeScript");
 
 var _revealFuction = require("./revealFuction");
 
+var _sideBarAnime = require("./sideBarAnime");
+
 (0, _revealFuction.revealEnterOffice)();
 (0, _revealFuction.reveal_img_career)();
 (0, _revealFuction.reveal_interact_img)();
-},{"./AnimeScript":"AnimeScript.js","./revealFuction":"revealFuction.js"}],"../../node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
+},{"./AnimeScript":"AnimeScript.js","./revealFuction":"revealFuction.js","./sideBarAnime":"sideBarAnime.js"}],"../../node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
 var global = arguments[3];
 var OVERLAY_ID = '__parcel__error__overlay__';
 var OldModule = module.bundle.Module;

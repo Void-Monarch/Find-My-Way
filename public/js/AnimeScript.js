@@ -128,15 +128,19 @@ const interact_pulse = anime({
   easing: 'linear',
 });
 
+// Sidebar Animation
+
 const sideBaritem = anime({
   targets: '.side-menu-item',
   translateX: {
-    value: ['-10%', '0%'],
-    delay: anime.stagger(200, { start: 3000 }),
+    value: ['-15%', '0%'],
+    delay: anime.stagger(80, { start: 100 }),
   },
-  direction: 'alternate',
+  opacity: [0, 1],
+  duration: 1200,
   autoplay: false,
 });
+
 
 export {
   anime,

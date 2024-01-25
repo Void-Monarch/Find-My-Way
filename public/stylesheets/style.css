@@ -660,6 +660,10 @@ video {
   margin: auto;
 }
 
+.m-32 {
+  margin: 8rem;
+}
+
 .mx-auto {
   margin-left: auto;
   margin-right: auto;
@@ -888,6 +892,10 @@ video {
 
 .overflow-y-auto {
   overflow-y: auto;
+}
+
+.overflow-x-hidden {
+  overflow-x: hidden;
 }
 
 .scroll-smooth {
@@ -1195,6 +1203,11 @@ video {
 .text-gray-900 {
   --tw-text-opacity: 1;
   color: rgb(17 24 39 / var(--tw-text-opacity));
+}
+
+.antialiased {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
 .shadow {
@@ -1571,6 +1584,10 @@ video {
     margin: 4rem;
   }
 
+  .lg\:m-32 {
+    margin: 8rem;
+  }
+
   .lg\:mr-24 {
     margin-right: 6rem;
   }
@@ -1593,6 +1610,18 @@ video {
 
   .lg\:mr-12 {
     margin-right: 3rem;
+  }
+
+  .lg\:mt-32 {
+    margin-top: 8rem;
+  }
+
+  .lg\:mt-12 {
+    margin-top: 3rem;
+  }
+
+  .lg\:mt-10 {
+    margin-top: 2.5rem;
   }
 
   .lg\:hidden {

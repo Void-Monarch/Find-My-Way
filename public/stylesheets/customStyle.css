@@ -56,3 +56,16 @@
 .drawer-navigation {
   transition: all 1s;
 }
+
+.side-menu-item-2 {
+  transition: all 1s;
+}
+.expandNow {
+  transform: translateY(-10%);
+  scale: 1.05;
+  transition: all 0.5s;
+}
+
+.expandNow > a {
+  color: #65a30d;
+}
