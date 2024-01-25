@@ -1901,6 +1901,7 @@ Object.defineProperty(exports, "anime", {
     return _animejs.default;
   }
 });
+exports.enterE = void 0;
 
 var _animejs = _interopRequireWildcard(require("animejs"));
 
@@ -1931,21 +1932,22 @@ var slides = document.querySelectorAll('.slide'); // ANIMATIONS
   },
   translateY: {
     value: ['20%', 0],
-    duration: 3000,
+    duration: 2500,
     delay: 200
   }
 });
 var allEnter = document.querySelectorAll('.enter--all'); // Foe the Enter Office SVG
 
-var enterE = (0, _animejs.default)({
+var enterE = exports.enterE = (0, _animejs.default)({
   targets: allEnter,
   translateY: {
     value: function value(e, i, t) {
       return ["-".concat(100 * i, "%"), "-=10%"];
     },
     delay: function delay(e, i) {
-      return 100 * i;
-    }
+      return 150 * i;
+    },
+    duration: 1300
   },
   opacity: {
     value: function value(e, i, t) {
@@ -1958,14 +1960,62 @@ var enterE = (0, _animejs.default)({
       return 1300;
     },
     easings: 'cubicBezier(.5, .05, .1, .3)'
-  } // autoplay: false,
-
+  },
+  autoplay: false
 });
-},{"animejs":"../../node_modules/animejs/lib/anime.es.js"}],"index.js":[function(require,module,exports) {
+},{"animejs":"../../node_modules/animejs/lib/anime.es.js"}],"revealFuction.js":[function(require,module,exports) {
+"use strict";
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.revealEnterOffice = void 0;
+
+var _AnimeScript = require("./AnimeScript");
+
+function _slicedToArray(arr, i) { return _arrayWithHoles(arr) || _iterableToArrayLimit(arr, i) || _unsupportedIterableToArray(arr, i) || _nonIterableRest(); }
+
+function _nonIterableRest() { throw new TypeError("Invalid attempt to destructure non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method."); }
+
+function _unsupportedIterableToArray(o, minLen) { if (!o) return; if (typeof o === "string") return _arrayLikeToArray(o, minLen); var n = Object.prototype.toString.call(o).slice(8, -1); if (n === "Object" && o.constructor) n = o.constructor.name; if (n === "Map" || n === "Set") return Array.from(o); if (n === "Arguments" || /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(n)) return _arrayLikeToArray(o, minLen); }
+
+function _arrayLikeToArray(arr, len) { if (len == null || len > arr.length) len = arr.length; for (var i = 0, arr2 = new Array(len); i < len; i++) arr2[i] = arr[i]; return arr2; }
+
+function _iterableToArrayLimit(r, l) { var t = null == r ? null : "undefined" != typeof Symbol && r[Symbol.iterator] || r["@@iterator"]; if (null != t) { var e, n, i, u, a = [], f = !0, o = !1; try { if (i = (t = t.call(r)).next, 0 === l) { if (Object(t) !== t) return; f = !1; } else for (; !(f = (e = i.call(t)).done) && (a.push(e.value), a.length !== l); f = !0); } catch (r) { o = !0, n = r; } finally { try { if (!f && null != t.return && (u = t.return(), Object(u) !== u)) return; } finally { if (o) throw n; } } return a; } }
+
+function _arrayWithHoles(arr) { if (Array.isArray(arr)) return arr; }
+
+var revealEnterOffice = exports.revealEnterOffice = function revealEnterOffice() {
+  var Sections2 = document.querySelector('#flexrow--2');
+
+  var revealSection = function revealSection(entries, observer) {
+    var _entries = _slicedToArray(entries, 1),
+        entry = _entries[0];
+
+    if (!entry.isIntersecting) return;
+
+    _AnimeScript.enterE.play();
+
+    console.log('played');
+    observer.unobserve(entry.target);
+  };
+
+  var sectionObserver = new IntersectionObserver(revealSection, {
+    root: null,
+    rootMargin: "0px",
+    threshold: 0.65
+  });
+  sectionObserver.observe(Sections2);
+};
+},{"./AnimeScript":"AnimeScript.js"}],"index.js":[function(require,module,exports) {
 "use strict";
 
 var _AnimeScript = require("./AnimeScript");
-},{"./AnimeScript":"AnimeScript.js"}],"../../node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
+
+var _revealFuction = require("./revealFuction");
+
+(0, _revealFuction.revealEnterOffice)();
+},{"./AnimeScript":"AnimeScript.js","./revealFuction":"revealFuction.js"}],"../../node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
 var global = arguments[3];
 var OVERLAY_ID = '__parcel__error__overlay__';
 var OldModule = module.bundle.Module;
@@ -1993,7 +2043,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "18335" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "26737" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};

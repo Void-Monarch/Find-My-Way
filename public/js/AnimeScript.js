@@ -31,7 +31,7 @@ anime({
   },
   translateY: {
     value: ['20%', 0],
-    duration: 3000,
+    duration: 2500,
     delay: 200,
   },
 });
@@ -47,8 +47,9 @@ const enterE = anime({
       return [`-${100 * i}%`, `-=10%`];
     },
     delay: function (e, i) {
-      return 100 * i;
+      return 150 * i;
     },
+    duration: 1300,
   },
 
   opacity: {
@@ -66,7 +67,7 @@ const enterE = anime({
 
     easings: 'cubicBezier(.5, .05, .1, .3)',
   },
-  // autoplay: false,
+  autoplay: false,
 });
 
-export { anime };
+export { anime, enterE };
