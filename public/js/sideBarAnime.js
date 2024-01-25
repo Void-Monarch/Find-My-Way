@@ -27,6 +27,11 @@ const itemSwell = (() => {
       e.classList.remove('expandNow');
     });
   });
+  document.querySelector('#body').addEventListener('click', () => {
+    items.forEach((e) => {
+      e.classList.remove('side-menu-item-2');
+    });
+  });
 })();
 
 export { sideItemIn, itemSwell };

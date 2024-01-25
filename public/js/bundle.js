@@ -10672,6 +10672,11 @@ var itemSwell = exports.itemSwell = function () {
       e.classList.remove('expandNow');
     });
   });
+  document.querySelector('#body').addEventListener('click', function () {
+    items.forEach(function (e) {
+      e.classList.remove('side-menu-item-2');
+    });
+  });
 }();
 },{"./AnimeScript":"AnimeScript.js"}],"index.js":[function(require,module,exports) {
 "use strict";
