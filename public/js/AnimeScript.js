@@ -128,4 +128,13 @@ const interact_pulse = anime({
   easing: 'linear',
 });
 
-export { anime, enterE, enterE_text, img_career, interact_img, interact_pulse };
+const sideBaritem =  anime({
+  targets: '.side-menu-item',
+  translateX: {
+    value: ['-10%', '0%'],
+    delay: anime.stagger(200, { start: 3000 }),
+  },
+  autoplay:false
+});
+
+export { anime, enterE, enterE_text, img_career, interact_img, interact_pulse , sideBaritem};
