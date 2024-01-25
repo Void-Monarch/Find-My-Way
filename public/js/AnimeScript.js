@@ -141,7 +141,6 @@ const sideBaritem = anime({
   autoplay: false,
 });
 
-
 export {
   anime,
   enterE,
