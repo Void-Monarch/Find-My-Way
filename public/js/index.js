@@ -1,4 +1,4 @@
-import { anime } from './AnimeScript';
+import { anime, interact_pulse } from './AnimeScript';
 import {
   revealEnterOffice,
   reveal_img_career,

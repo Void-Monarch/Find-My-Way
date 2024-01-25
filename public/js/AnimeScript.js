@@ -113,4 +113,19 @@ const interact_img = anime({
   autoplay: false,
 });
 
-export { anime, enterE, enterE_text, img_career ,interact_img };
+anime({
+  targets: '#interact-tab-1',
+  translateY: ['-100%', '-100%'],
+});
+const interact_pulse = anime({
+  targets: '#interact-tab-1',
+  scale: {
+    value: [1, 1.05],
+    duration: 1000,
+  },
+  direction: 'alternate',
+  loop: true,
+  easing: 'linear',
+});
+
+export { anime, enterE, enterE_text, img_career, interact_img, interact_pulse };

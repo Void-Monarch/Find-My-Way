@@ -10413,7 +10413,7 @@ Object.defineProperty(exports, "anime", {
     return _animejs.default;
   }
 });
-exports.interact_img = exports.img_career = exports.enterE_text = exports.enterE = void 0;
+exports.interact_pulse = exports.interact_img = exports.img_career = exports.enterE_text = exports.enterE = void 0;
 
 var _animejs = _interopRequireWildcard(require("animejs"));
 
@@ -10517,6 +10517,20 @@ var interact_img = exports.interact_img = (0, _animejs.default)({
     duration: 2000
   },
   autoplay: false
+});
+(0, _animejs.default)({
+  targets: '#interact-tab-1',
+  translateY: ['-100%', '-100%']
+});
+var interact_pulse = exports.interact_pulse = (0, _animejs.default)({
+  targets: '#interact-tab-1',
+  scale: {
+    value: [1, 1.05],
+    duration: 1000
+  },
+  direction: 'alternate',
+  loop: true,
+  easing: 'linear'
 });
 },{"animejs":"../../node_modules/animejs/lib/anime.es.js","validator":"../../node_modules/validator/index.js"}],"revealFuction.js":[function(require,module,exports) {
 "use strict";
