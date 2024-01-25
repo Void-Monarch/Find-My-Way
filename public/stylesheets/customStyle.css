@@ -18,3 +18,24 @@
 .enter--4 {
   transform: translateY(-300%);
 }
+
+.enter__text {
+  opacity: 0;
+  transform: translateX(-20%);
+}
+
+@keyframes fader {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@media (min-width: 250px) {
+  #hero--text {
+    animation: fader 1s ease-in;
+    transition: all 1s;
+  }
+}

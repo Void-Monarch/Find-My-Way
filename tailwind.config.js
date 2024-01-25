@@ -2,8 +2,16 @@
 module.exports = {
   content: ['./views/*.ejs', './views/partials/*.ejs'],
   theme: {
-    extend: {},
+    extend: {
+      spacing: {
+        112: '28rem',
+        128: '32rem',
+        256: '64rem',
+      },
+    },
     screens: {
+      xss: '250px',
+
       xs: '375px',
 
       sm: '640px',

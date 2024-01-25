@@ -2,6 +2,7 @@
 'use strict';
 
 import anime, { easings } from 'animejs';
+import validator from 'validator';
 
 // Elements
 const slides = document.querySelectorAll('.slide');
@@ -70,4 +71,32 @@ const enterE = anime({
   autoplay: false,
 });
 
-export { anime, enterE };
+const enterE_text = anime({
+  targets: '.enter__text',
+  translateX: {
+    value: ['-20%', 0],
+    duration: 1000,
+    easing: 'cubicBezier(.5, .05, .1, .3)',
+  },
+  opacity: {
+    value: [0, 1],
+    duration: 2000,
+  },
+  autoplay: false,
+});
+
+const img_career = anime({
+  targets: '.img__career ',
+  translateX: {
+    value: ['-20%', 0],
+    duration: 1200,
+    easing: 'cubicBezier(.5, .05, .1, .3)',
+  },
+  opacity: {
+    value: [0, 1],
+    duration: 2000,
+  },
+  autoplay: false,
+});
+
+export { anime, enterE, enterE_text, img_career };
