@@ -10,16 +10,23 @@ process.on('uncaughtException', (err) => {
 dotenv.config({ path: './config.env' });
 const app = require('./app');
 
-let DB = process.env.DATABASE.replace(
-  '<PASSWORD>',
-  process.env.DATABASE_PASSWORD,
-);
+// CHECK DB TYPE
+let DB;
+if (process.env.DB_TYPE == 'LOCAL') {
+  DB = process.env.DATABASE_LOCAL;
+} else if (process.env.DB_TYPE == 'LIVE') {
+  // Live server
+  DB = process.env.DATABASE.replace(
+    '<PASSWORD>',
+    process.env.DATABASE_PASSWORD,
+  );
+}
 
 mongoose
   .connect(DB, {})
   .then(() =>
     console.log(
-      '[+] DB connection successful! | Connected with [findmyway] database\n',
+      `[+] DB connection successful! | Connected with [findmyway] database : ${process.env.DB_TYPE} \n`,
     ),
   );
 
