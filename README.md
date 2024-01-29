@@ -21,3 +21,5 @@ Welcome to Find My Way, a Node.js web application designed to provide valuable i
    npm install
    ```
    
+## Screenshots
+- ![Landing Page](image.png)
