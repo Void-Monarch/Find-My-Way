@@ -14,6 +14,7 @@ exports.getOverview = catchAsync(async (req, res, next) => {
 
 exports.getLoginForm = (req, res) => {
   res.status(200).render('login', {
+    currUser: res.locals.user,
     title: 'Find My Way | Log into your account',
   });
 };
