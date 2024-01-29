@@ -5,7 +5,7 @@ import {
   reveal_interact_img,
 } from './revealFuction';
 import { sideItemIn, itemSwell } from './sideBarAnime';
-import { login } from './login';
+import { login, logout } from './login';
 
 try {
   revealEnterOffice();
@@ -17,7 +17,6 @@ try {
 
 // LOGIN
 const loginForm = document.querySelector('#form--login');
-console.log(loginForm);
 
 if (loginForm)
   loginForm.addEventListener('submit', (e) => {
@@ -26,3 +25,5 @@ if (loginForm)
     const password = document.getElementById('password').value;
     login(email, password);
   });
+
+if (logOutBtn) logOutBtn.addEventListener('click', logout);

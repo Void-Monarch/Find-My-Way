@@ -10,5 +10,6 @@ router
   .route('/login')
   .get(authController.isLoggedIn, viewController.getLoginForm);
 
+router.route('/logout').get()
 // Exporting The
 module.exports = router;
