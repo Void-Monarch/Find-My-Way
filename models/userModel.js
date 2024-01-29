@@ -3,7 +3,6 @@ const mongoose = require('mongoose');
 const validator = require('validator');
 const bcrypt = require('bcryptjs');
 
-
 const userSchema = new mongoose.Schema({
   name: {
     type: String,
@@ -27,7 +26,7 @@ const userSchema = new mongoose.Schema({
     enum: ['male', 'female', 'others'],
     required: [true, 'Please specify your gender'],
   },
-  date_of_birth : {
+  date_of_birth: {
     type: Date,
   },
 

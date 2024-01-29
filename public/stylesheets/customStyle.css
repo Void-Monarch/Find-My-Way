@@ -70,3 +70,6 @@
   color: #65a30d;
 }
 
+.navbar-header {
+  z-index: 100;
+}
