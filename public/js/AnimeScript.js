@@ -8,6 +8,7 @@ import validator from 'validator';
 const slides = document.querySelectorAll('.slide');
 
 // ANIMATIONS
+
 anime({
   targets: '#hr--hero-below',
   width: '50%',
@@ -140,7 +141,6 @@ const sideBaritem = anime({
   duration: 1200,
   autoplay: false,
 });
-
 
 export {
   anime,
