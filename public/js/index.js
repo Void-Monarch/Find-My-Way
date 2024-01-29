@@ -17,6 +17,7 @@ try {
 
 // LOGIN
 const loginForm = document.querySelector('#form--login');
+const logOutBtn = document.querySelector('#logOutBtn');
 
 if (loginForm)
   loginForm.addEventListener('submit', (e) => {

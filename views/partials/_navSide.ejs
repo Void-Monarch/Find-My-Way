@@ -96,28 +96,28 @@
   <% if (User)  { %>
 
    <div class="flex items-center md:order-2 space-x-3 md:space-x-0 rtl:space-x-reverse">
-      <button type="button" class="flex text-sm bg-purple-400 rounded-full md:me-0 focus:ring-4 object-contain focus:ring-white dark:focus:ring-gray-600" id="user-menu-button" aria-expanded="false" data-dropdown-toggle="user-dropdown" data-dropdown-placement="bottom">
+      <button type="button" class="flex text-sm bg-gradient-to-r from-purple-500 via-purple-600 to-purple-700 hover:bg-gradient-to-br shadow-lg shadow-purple-500/50 rounded-full md:me-0 focus:ring-2 object-contain focus:ring-purple-700 " id="user-menu-button" aria-expanded="false" data-dropdown-toggle="user-dropdown" data-dropdown-placement="bottom">
         <span class="sr-only">Open user menu</span>
-        <i class="icofont-user w-8 h-8 rounded-full border-2 border-black " style="font-size: 1.4rem;padding-top:1.5px;"></i>
+        <i class="icofont-user w-8 h-8 rounded-full " style="font-size: 1.4rem;"></i>
       </button>
       <!-- Dropdown menu -->
-      <div class="z-50 hidden my-4 text-base list-none bg-purple-400 divide-y  divide-gray-100 rounded-lg shadow dark:bg-gray-700 dark:divide-gray-600" id="user-dropdown">
+      <div class="z-50 hidden my-4 text-base list-none bg-gradient-to-r min-w-32 from-purple-500 via-purple-600 to-purple-700 hover:bg-gradient-to-br shadow-lg shadow-purple-500/50 divide-y  divide-gray-100 rounded-lg " id="user-dropdown">
         <div class="px-4 py-3">
-          <span class="block text-sm text-gray-800 dark:text-white"><%= User.name  %></span>
-          <span class="block text-sm  text-gray-200 truncate dark:text-gray-400"><%= User.email %></span>
+          <span class="block text-sm text-white dark:text-white font-semibold"><%= User.name  %></span>
+          <span class="block text-sm  text-white truncate dark:text-gray-400"><%= User.email %></span>
         </div>
         <ul class="py-2" aria-labelledby="user-menu-button">
           <li>
-            <a href="#" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 dark:hover:bg-gray-600 dark:text-gray-200 dark:hover:text-white">Home</a>
+            <a href="#" class="block px-4 py-2 text-sm text-white bg-gradient-to-r from-purple-500 via-purple-600 to-purple-700 hover:bg-gradient-to-br">Home</a>
           </li>
           <li>
-            <a href="#" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 dark:hover:bg-gray-600 dark:text-gray-200 dark:hover:text-white">Settings</a>
+            <a href="#" class="block px-4 py-2 text-sm text-white bg-gradient-to-r from-purple-500 via-purple-600 to-purple-700 hover:bg-gradient-to-br">Settings</a>
           </li>
           <li>
-            <a href="#" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 dark:hover:bg-gray-600 dark:text-gray-200 dark:hover:text-white">Profile</a>
+            <a href="#" class="block px-4 py-2 text-sm text-white bg-gradient-to-r from-purple-500 via-purple-600 to-purple-700 hover:bg-gradient-to-br">Profile</a>
           </li>
           <li>
-            <a href="/logout" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 dark:hover:bg-gray-600 dark:text-gray-200 dark:hover:text-white">Sign out</a>
+            <a href="#" id="logOutBtn" class="block px-4 py-2 text-sm text-white bg-gradient-to-r from-purple-500 via-purple-600 to-purple-700 hover:bg-gradient-to-br">Sign out</a>
           </li>
         </ul>
       </div>
