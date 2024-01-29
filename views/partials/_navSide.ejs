@@ -1,10 +1,10 @@
-<nav class="bg-transparent border-gray-200" id="navBar">
-  <div class="max-w-screen-2xl flex flex-wrap items-center justify-between mx-auto p-4" >
+<nav class="bg-transparent border-gray-200 " id="navBar">
+  <div class="max-w-screen-2xl flex flex-wrap mx-auto p-4" >
     
  <!-- Side Navbar -->
     
 <!-- drawer init and show -->
-<div class="text-center select-none">
+<div class="text-center select-none flex-1 flex justify-start">
   <button type="button" id="sideMenuBtn" class="inline-flex items-center w-10 h-10 justify-center text-sm text-white rounded-lg p-1" data-drawer-target="drawer-navigation" data-drawer-show="drawer-navigation" aria-controls="drawer-navigation">
       <img src="/assets/hamburger.png" alt="" class="">
   </button>
@@ -95,7 +95,7 @@
   <!-- USER DROPDOWN MENU -->
   <% if (User)  { %>
 
-   <div class="flex items-center md:order-2 space-x-3 md:space-x-0 rtl:space-x-reverse">
+   <div class="flex-1 justify-end items-center md:order-2 space-x-3 md:space-x-0 rtl:space-x-reverse">
       <button type="button" class="flex text-sm bg-gradient-to-r  from-purple-500 via-purple-600 to-purple-700 hover:bg-gradient-to-br shadow-lg shadow-purple-500/50 rounded-full md:me-0 focus:ring-2 object-contain focus:ring-purple-700 " id="user-menu-button" aria-expanded="false" data-dropdown-toggle="user-dropdown" data-dropdown-placement="bottom">
         <span class="sr-only">Open user menu</span>
         <i class="icofont-user w-8 h-8 rounded-full translate-y-1" style="font-size: 1.4rem;"></i>
@@ -124,9 +124,9 @@
    </div>
 
   <% } else if (URL == '/login') { %>
-      <div> </div>
+      <div class="flex flex-1 justify-end"></div>
   <% } else { %>
-   <div class="flex justify-end">
+   <div class="flex flex-1 justify-end">
 
       <a href="/login" class="">
       <button class="text-white flex items-center bg-gradient-to-r from-purple-500 via-purple-600 to-purple-700 hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-purple-300 dark:focus:ring-purple-800 shadow-lg shadow-purple-500/50 dark:shadow-lg dark:shadow-purple-800/80 rounded-lg text-sm font-semibold px-5 py-2.5 text-center me-2 mb-2">
