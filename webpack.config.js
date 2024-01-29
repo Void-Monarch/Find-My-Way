@@ -7,6 +7,19 @@ module.exports = {
   // Path to your entry point. From this file Webpack will begin its work
   entry: './public/js/index.js',
 
+  module: {
+    rules: [
+      {
+        test: /\.(js)$/,
+        exclude: /node_modules/,
+        use: ['babel-loader'],
+      },
+    ],
+  },
+  resolve: {
+    extensions: ['*', '.js'],
+  },
+
   // Path and filename of your result bundle.
   // Webpack will bundle all JavaScript into this file
   output: {

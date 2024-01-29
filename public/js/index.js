@@ -7,6 +7,22 @@ import {
 import { sideItemIn, itemSwell } from './sideBarAnime';
 import { login } from './login';
 
-revealEnterOffice();
-reveal_img_career();
-reveal_interact_img();
+try {
+  revealEnterOffice();
+  reveal_img_career();
+  reveal_interact_img();
+} catch (e) {
+  console.log('Not at Overview page');
+}
+
+// LOGIN
+const loginForm = document.querySelector('#form--login');
+console.log(loginForm);
+
+if (loginForm)
+  loginForm.addEventListener('submit', (e) => {
+    e.preventDefault();
+    const email = document.getElementById('email').value;
+    const password = document.getElementById('password').value;
+    login(email, password);
+  });
