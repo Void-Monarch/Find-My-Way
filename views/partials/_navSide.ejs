@@ -95,18 +95,18 @@
   <!-- USER DROPDOWN MENU -->
   <% if (User)  { %>
 
-   <div class="flex-1 justify-end items-center md:order-2 space-x-3 md:space-x-0 rtl:space-x-reverse">
+   <div class="flex-1 justify-end flex items-center md:order-2 space-x-3 md:space-x-0 rtl:space-x-reverse">
       <button type="button" class="flex text-sm bg-gradient-to-r  from-purple-500 via-purple-600 to-purple-700 hover:bg-gradient-to-br shadow-lg shadow-purple-500/50 rounded-full md:me-0 focus:ring-2 object-contain focus:ring-purple-700 " id="user-menu-button" aria-expanded="false" data-dropdown-toggle="user-dropdown" data-dropdown-placement="bottom">
         <span class="sr-only">Open user menu</span>
         <i class="icofont-user w-8 h-8 rounded-full translate-y-1" style="font-size: 1.4rem;"></i>
       </button>
       <!-- Dropdown menu -->
-      <div class="z-50 hidden my-4 text-base list-none bg-gradient-to-r min-w-32 from-purple-500 via-purple-600 to-purple-700 hover:bg-gradient-to-br shadow-lg shadow-purple-500/50 divide-y  divide-gray-100 rounded-lg " id="user-dropdown">
+      <div class="z-50 hidden my-4 text-base list-none bg-gradient-to-r min-w-32 from-purple-500 via-purple-600 to-purple-700 hover:bg-gradient-to-br shadow-xl shadow-purple-500/50 divide-y  divide-gray-100 rounded-lg " id="user-dropdown">
         <div class="px-4 py-3">
           <span class="block text-sm text-white dark:text-white font-semibold"><%= User.name  %></span>
           <span class="block text-sm  text-white truncate dark:text-gray-400"><%= User.email %></span>
         </div>
-        <ul class="py-2" aria-labelledby="user-menu-button">
+        <ul class="py-2 *:font-semibold" aria-labelledby="user-menu-button">
           <li>
             <a href="#" class="block px-4 py-2 text-sm text-white bg-gradient-to-r from-purple-500 via-purple-600 to-purple-700 hover:bg-gradient-to-br">Home</a>
           </li>
@@ -124,9 +124,35 @@
    </div>
 
   <% } else if (URL == '/login') { %>
-      <div class="flex flex-1 justify-end"></div>
+      <div class="flex flex-1 justify-end items-center">
+         <a href="/signup" class="">
+            <button class="text-white flex items-center bg-gradient-to-r from-purple-500 via-purple-600 to-purple-700 hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-purple-300 dark:focus:ring-purple-800 shadow-lg shadow-purple-500/50 dark:shadow-lg dark:shadow-purple-800/80 rounded-lg text-sm font-semibold px-5 py-2.5 text-center me-2 mb-2">
+               <svg class="flex-shrink-0 w-5 h-5 text-white transition duration-75 " aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
+               <path d="M5 5V.13a2.96 2.96 0 0 0-1.293.749L.879 3.707A2.96 2.96 0 0 0 .13 5H5Z"/>
+               <path d="M6.737 11.061a2.961 2.961 0 0 1 .81-1.515l6.117-6.116A4.839 4.839 0 0 1 16 2.141V2a1.97 1.97 0 0 0-1.933-2H7v5a2 2 0 0 1-2 2H0v11a1.969 1.969 0 0 0 1.933 2h12.134A1.97 1.97 0 0 0 16 18v-3.093l-1.546 1.546c-.413.413-.94.695-1.513.81l-3.4.679a2.947 2.947 0 0 1-1.85-.227 2.96 2.96 0 0 1-1.635-3.257l.681-3.397Z"/>
+               <path d="M8.961 16a.93.93 0 0 0 .189-.019l3.4-.679a.961.961 0 0 0 .49-.263l6.118-6.117a2.884 2.884 0 0 0-4.079-4.078l-6.117 6.117a.96.96 0 0 0-.263.491l-.679 3.4A.961.961 0 0 0 8.961 16Zm7.477-9.8a.958.958 0 0 1 .68-.281.961.961 0 0 1 .682 1.644l-.315.315-1.36-1.36.313-.318Zm-5.911 5.911 4.236-4.236 1.359 1.359-4.236 4.237-1.7.339.341-1.699Z"/>
+               </svg>
+               <span class="flex-1 ms-3 whitespace-nowrap">Sign Up</span>
+            </button>
+            </a>
+      </div>
+      <% } else if (URL == '/signup') { %>
+         <div class="flex flex-1 justify-end items-center">
+            
+            <a href="/login" class="">
+            <button class="text-white flex items-center bg-gradient-to-r from-purple-500 via-purple-600 to-purple-700 hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-purple-300 dark:focus:ring-purple-800 shadow-lg shadow-purple-500/50 dark:shadow-lg dark:shadow-purple-800/80 rounded-lg text-sm font-semibold px-5 py-2.5 text-center me-2 mb-2">
+               <svg class="flex-shrink-0 w-5 h-5 text-white transition duration-75" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 18 16">
+               <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 8h11m0 0L8 4m4 4-4 4m4-11h3a2 2 0 0 1 2 2v10a2 2 0 0 1-2 2h-3"/>
+               </svg>
+               <span class="flex-1 ms-3 whitespace-nowrap">Sign In</span>
+            </button>
+            </a>
+
+         </div>
+
   <% } else { %>
-   <div class="flex flex-1 justify-end">
+
+   <div class="flex flex-1 justify-end items-center">
 
       <a href="/login" class="">
       <button class="text-white flex items-center bg-gradient-to-r from-purple-500 via-purple-600 to-purple-700 hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-purple-300 dark:focus:ring-purple-800 shadow-lg shadow-purple-500/50 dark:shadow-lg dark:shadow-purple-800/80 rounded-lg text-sm font-semibold px-5 py-2.5 text-center me-2 mb-2">
@@ -137,7 +163,7 @@
       </button>
       </a>
 
-      <a href="#" class="">
+      <a href="/signup" class="">
       <button class="text-white flex items-center bg-gradient-to-r from-purple-500 via-purple-600 to-purple-700 hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-purple-300 dark:focus:ring-purple-800 shadow-lg shadow-purple-500/50 dark:shadow-lg dark:shadow-purple-800/80 rounded-lg text-sm font-semibold px-5 py-2.5 text-center me-2 mb-2">
          <svg class="flex-shrink-0 w-5 h-5 text-white transition duration-75 " aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
          <path d="M5 5V.13a2.96 2.96 0 0 0-1.293.749L.879 3.707A2.96 2.96 0 0 0 .13 5H5Z"/>

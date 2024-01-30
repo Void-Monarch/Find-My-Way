@@ -20,3 +20,11 @@ exports.getLoginForm = (req, res) => {
     URL: req.url,
   });
 };
+
+exports.getSignupForm = (req, res) => {
+  res.status(200).render('signup', {
+    title: 'Find My Way | Join us',
+    User: res.locals.user,
+    URL: req.url,
+  });
+};
