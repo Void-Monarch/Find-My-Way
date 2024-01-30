@@ -105,7 +105,7 @@ const login = async (email, password) => {
       <span class="sr-only">Fire icon</span>
     </div>
     <div class="ms-3 text-sm font-normal">
-      Login Unsuccessfull | Please try again.
+      Login Unsuccessfull | ${err.response.data.message}
     </div>
     <button
       type="button"
@@ -248,7 +248,7 @@ const signup = async (name, gender, email, password, passwordConfirm) => {
       <span class="sr-only">Error icon</span>
     </div>
     <div class="ms-3 text-sm font-normal" id="signupToastText">
-      Validation Error ! Try Again
+      ${err.response.data.message} !
     </div>
     <button
       type="button"
