@@ -75,6 +75,7 @@ const login = async (email, password) => {
       }, 1000);
     }
   } catch (err) {
+    console.log(err);
     let alertBox = document.querySelector('#login--alert');
     alertBox.classList.remove('hidden');
     alertBox.insertAdjacentHTML(

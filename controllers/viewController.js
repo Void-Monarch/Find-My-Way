@@ -38,14 +38,19 @@ exports.getAllArticle = catchAsync(async (req, res, next) => {
       url: 'http://127.0.0.1:3000/api/v1/article/',
       data: {},
     });
-    if (AXIOSres.data.status === 'success')
-      console.log(AXIOSres.data.data.data);
-    res.status(200).render('allArticle', {
-      title: 'Find My Way | All Articles',
-      User: res.locals.user,
-      data: AXIOSres.data.data,
-    });
+
+    if (AXIOSres.data.status === 'success') {
+      const Data = AXIOSres.data.data.data;
+
+      res.status(200).render('allArticle', {
+        title: 'Find My Way | All Articles',
+        User: res.locals.user,
+        Data,
+      });
+    }
   } catch (err) {
-    console.log(err.response.data.message);
+    return next(
+      new AppError(`${err.response.statusText}`, err.response.status),
+    );
   }
 });

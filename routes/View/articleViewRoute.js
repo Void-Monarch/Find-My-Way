@@ -5,7 +5,8 @@ const articleController = require('../../controllers/articleController');
 
 const router = express.Router();
 
-router.route('/').get(authController.isLoggedIn, viewController.getAllArticle);
+
+router.route('/').get(viewController.getAllArticle);
 
 // Exporting The
 module.exports = router;

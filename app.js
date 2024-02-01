@@ -7,6 +7,8 @@ const xss = require('xss-clean');
 const cookieParser = require('cookie-parser');
 // const hpp = require('hpp');
 const path = require('path');
+const authController = require('./controllers/authController');
+
 // const AppError = require('./utils/appError');
 // const globalErrorHandler = require('./controllers/errorController');
 const userRouter = require('./routes/API/userRoute');
@@ -79,6 +81,7 @@ app.use('/api/v1/user', userRouter);
 app.use('/api/v1/article', articleRouter);
 
 // 3.2 View Routes
+app.use('/',authController.isLoggedIn)
 app.use('/', viewRouter);
 app.use('/article', articleViewRouter);
 
