@@ -78,3 +78,13 @@
 .cusNav {
   animation: fader 0.6s ease-in;
 }
+
+#acticle--section {
+  clip-path: polygon(11% 0, 100% 0, 100% 100%, 0 100%, 0 16%);
+}
+
+@media (min-width: 1536px) {
+  #acticleContainer {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+  }
+}

@@ -1,28 +1,190 @@
 <section
-  class="mt-20 mb-20 2xl:ml-12 2xl:mr-12 sm:ml-10 sm:mr-10 xss:mr-4 xss:ml-4"
+  class="mt-20 mb-20 "
 >
   <div
-    class="flex items-center justify-center w-full flex-col xss:p-6 border-2"
+    class="flex w-full flex-col space-y-4 justify-around xss:p-6  bg-[#f8f8fd] min-h-128"
+    id="acticle--section"
   >
+  <!-- Heading -->
+    <div class="flex flox-row self-start translate-x-[5vw]">
+        <h1 class="text-3xl " style="font-family: kanit;font-weight: 300;">Featured Jobs</h1>
+    </div>
+    <!-- Heading END -->
+    <!-- Article Container -->
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 2xl:grid-cols-4 gap-x-2 gap-y-4 self-center" id="acticleContainer">
     <!-- Each Article -->
-    <div class="flex border-2 bg-red-200">
-      <div class="flex flex-row space-x-5 items-center bg-green-400 m-2">
-        <div class="flex size-24 grow-0 justify-start m-2">
-          <img src="/assets/find-my-way-high-resolution-logo.png" alt="" />
-        </div>
-        <div class="flex flex-initial flex-col w-80 h-full justify-around mr-2">
-          <div class="flex">
-            <h1 class="text-xl font-semibold">Position of the Job</h1>
+      <div class="flex rounded-sm bg-white">
+        <div
+          class="flex xss:flex-col sm:flex-row space-x-3 items-center m-[4px] w-full"
+        >
+          <div class="flex size-24 rounded-sm flex-initial justify-start p-1">
+            <img src="/assets/find-my-way-high-resolution-logo.png" alt="" class="object-contain" />
           </div>
-          <div class="flex">
-            <h1>hello2</h1>
-          </div>
-          <div class="flex">
-            <h1>hello3</h1>
+          <div
+            class="flex flex-col w-full h-full justify-around mr-2"
+          >
+            <div class="flex">
+              <h1 class="text-xl font-semibold">Position of the Job</h1>
+            </div>
+            <div class="flex">
+              <h3 class="text-md font-light translate-y-1">Location</h1>
+            </div>
+            <div class="flex flex-row divide-x whitespace-nowrap divide-slate-300">
+              <div class="flex">
+                <span class="bg-green-300 text-green-600 rounded-full me-1 px-2.5 py-0.5 text-sm font-medium transition-all hover:bg-green-500 hover:text-white hover:scale-105 ">Full Time</span>
+              </div>
+              <div class="flex overflow-x-scroll">
+                <span class="bg-green-300 text-green-600 rounded-full ml-1 me-1 px-2.5 py-0.5 text-sm font-medium">Full Time</span>
+                <span class="bg-green-300 text-green-600 rounded-full ml-1 me-1 px-2.5 py-0.5 text-sm font-medium">Full Time</span>
+
+              </div>
+            </div>
           </div>
         </div>
       </div>
-    </div>
+
+      <div class="flex rounded-sm bg-white">
+        <div
+          class="flex xss:flex-col sm:flex-row space-x-3 items-center m-[4px] "
+        >
+          <div class="flex size-24 rounded-sm grow-0 justify-start p-1">
+            <img src="/assets/find-my-way-high-resolution-logo.png" alt="" class="" />
+          </div>
+          <div
+            class="flex flex-initial flex-col sm:w-[16rem] h-full justify-around mr-2"
+          >
+            <div class="flex">
+              <h1 class="text-xl font-semibold">Position of the Job</h1>
+            </div>
+            <div class="flex">
+              <h3 class="text-md font-light translate-y-1">Location</h1>
+            </div>
+            <div class="flex flex-row divide-x divide-slate-300">
+              <div class="flex-0">
+                <span class="bg-green-300 text-green-600 rounded-full me-1 px-2.5 py-0.5 text-sm font-medium transition-all hover:bg-green-500 hover:text-white hover:scale-105 ">Full Time</span>
+              </div>
+              <div class="flex flex-1">
+                <span class="bg-green-300 text-green-600 rounded-full ml-1 me-1 px-2.5 py-0.5 text-sm font-medium">Full Time</span>
+                <span class="bg-green-300 text-green-600 rounded-full me-1 px-2.5 py-0.5 text-sm font-medium">Full Time</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="flex rounded-sm bg-white">
+        <div
+          class="flex xss:flex-col sm:flex-row space-x-3 items-center m-[4px] "
+        >
+          <div class="flex size-24 rounded-sm grow-0 justify-start p-1">
+            <img src="/assets/find-my-way-high-resolution-logo.png" alt="" class="" />
+          </div>
+          <div
+            class="flex flex-initial flex-col sm:w-[16rem] h-full justify-around mr-2"
+          >
+            <div class="flex">
+              <h1 class="text-xl font-semibold">Position of the Job</h1>
+            </div>
+            <div class="flex">
+              <h3 class="text-md font-light translate-y-1">Location</h1>
+            </div>
+            <div class="flex flex-row divide-x divide-slate-300">
+              <div class="flex-0">
+                <span class="bg-green-300 text-green-600 rounded-full me-1 px-2.5 py-0.5 text-sm font-medium transition-all hover:bg-green-500 hover:text-white hover:scale-105 ">Full Time</span>
+              </div>
+              <div class="flex flex-1">
+                <span class="bg-green-300 text-green-600 rounded-full ml-1 me-1 px-2.5 py-0.5 text-sm font-medium">Full Time</span>
+                <span class="bg-green-300 text-green-600 rounded-full me-1 px-2.5 py-0.5 text-sm font-medium">Full Time</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="flex rounded-sm bg-white">
+        <div
+          class="flex xss:flex-col sm:flex-row space-x-3 items-center m-[4px] "
+        >
+          <div class="flex size-24 rounded-sm grow-0 justify-start p-1">
+            <img src="/assets/find-my-way-high-resolution-logo.png" alt="" class="" />
+          </div>
+          <div
+            class="flex flex-initial flex-col sm:w-[16rem] h-full justify-around mr-2"
+          >
+            <div class="flex">
+              <h1 class="text-xl font-semibold">Position of the Job</h1>
+            </div>
+            <div class="flex">
+              <h3 class="text-md font-light translate-y-1">Location</h1>
+            </div>
+            <div class="flex flex-row divide-x divide-slate-300">
+              <div class="flex-0">
+                <span class="bg-green-300 text-green-600 rounded-full me-1 px-2.5 py-0.5 text-sm font-medium transition-all hover:bg-green-500 hover:text-white hover:scale-105 ">Full Time</span>
+              </div>
+              <div class="flex flex-1">
+                <span class="bg-green-300 text-green-600 rounded-full ml-1 me-1 px-2.5 py-0.5 text-sm font-medium">Full Time</span>
+                <span class="bg-green-300 text-green-600 rounded-full me-1 px-2.5 py-0.5 text-sm font-medium">Full Time</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="flex rounded-sm bg-white">
+        <div
+          class="flex xss:flex-col sm:flex-row space-x-3 items-center m-[4px] "
+        >
+          <div class="flex size-24 rounded-sm grow-0 justify-start p-1">
+            <img src="/assets/find-my-way-high-resolution-logo.png" alt="" class="" />
+          </div>
+          <div
+            class="flex flex-initial flex-col sm:w-[16rem] h-full justify-around mr-2"
+          >
+            <div class="flex">
+              <h1 class="text-xl font-semibold">Position of the Job</h1>
+            </div>
+            <div class="flex">
+              <h3 class="text-md font-light translate-y-1">Location</h1>
+            </div>
+            <div class="flex flex-row divide-x divide-slate-300">
+              <div class="flex-0">
+                <span class="bg-green-300 text-green-600 rounded-full me-1 px-2.5 py-0.5 text-sm font-medium transition-all hover:bg-green-500 hover:text-white hover:scale-105 ">Full Time</span>
+              </div>
+              <div class="flex flex-1">
+                <span class="bg-green-300 text-green-600 rounded-full ml-1 me-1 px-2.5 py-0.5 text-sm font-medium">Full Time</span>
+                <span class="bg-green-300 text-green-600 rounded-full me-1 px-2.5 py-0.5 text-sm font-medium">Full Time</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="flex rounded-sm bg-white">
+        <div
+          class="flex xss:flex-col sm:flex-row space-x-3 items-center m-[4px] "
+        >
+          <div class="flex size-24 rounded-sm grow-0 justify-start p-1">
+            <img src="/assets/find-my-way-high-resolution-logo.png" alt="" class="" />
+          </div>
+          <div
+            class="flex flex-initial flex-col sm:w-[16rem] h-full justify-around mr-2"
+          >
+            <div class="flex">
+              <h1 class="text-xl font-semibold">Position of the Job</h1>
+            </div>
+            <div class="flex">
+              <h3 class="text-md font-light translate-y-1">Location</h1>
+            </div>
+            <div class="flex flex-row divide-x divide-slate-300">
+              <div class="flex-0">
+                <span class="bg-green-300 text-green-600 rounded-full me-1 px-2.5 py-0.5 text-sm font-medium transition-all hover:bg-green-500 hover:text-white hover:scale-105 ">Full Time</span>
+              </div>
+              <div class="flex flex-1">
+                <span class="bg-green-300 text-green-600 rounded-full ml-1 me-1 px-2.5 py-0.5 text-sm font-medium">Full Time</span>
+                <span class="bg-green-300 text-green-600 rounded-full me-1 px-2.5 py-0.5 text-sm font-medium">Full Time</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     <!-- each article End -->
+    </div>
+    <!-- article Container end -->
   </div>
 </section>
