@@ -1,4 +1,5 @@
 import { anime, interact_pulse } from './AnimeScript';
+import { stickNav } from './stickyNav';
 import {
   revealEnterOffice,
   reveal_img_career,
@@ -7,12 +8,15 @@ import {
 import { sideItemIn, itemSwell } from './sideBarAnime';
 import { login, logout, signup } from './login';
 
+// All imported fuction exec //
+stickNav();
+
 try {
   revealEnterOffice();
   reveal_img_career();
   reveal_interact_img();
 } catch (e) {
-  console.log('Not at Overview page');
+  console.log('Nothing to see here');
 }
 
 // LOGIN

@@ -4,7 +4,7 @@
   "description": "A tech expo project , The goal of this web application is to provide information to disabled individuals to enchance there living conditions, including tips, jobs etc..",
   "main": "app.js",
   "scripts": {
-    "start:server": "nodemon server.js",
+    "start:server": "nodemon -e js,ejs server.js",
     "debug:ndb": "ndb server.js",
     "tailwind:css": "tailwindcss -i public/stylesheets/tailwind.css -o public/stylesheets/style.css --watch",
     "watch:js": "webpack --watch --config webpack.config.js",
