@@ -6,14 +6,9 @@
   "scripts": {
     "start:server": "nodemon server.js",
     "debug:ndb": "ndb server.js",
-    
     "tailwind:css": "tailwindcss -i public/stylesheets/tailwind.css -o public/stylesheets/style.css --watch",
     "watch:js": "webpack --watch --config webpack.config.js",
-    "start": "concurrently --kill-others -c \"blue.bold,magenta.bold,green.bold\" \"npm run tailwind:css\" \"npm run watch:js \" \"npm run start:server\"",
-
-    "watch:js-build": "webpack --config webpack.config.js",
-    "tailwind:css-build": "tailwindcss -i public/stylesheets/tailwind.css -o public/stylesheets/style.css",
-    "start:build": "concurrently --kill-others -c \"blue.bold,magenta.bold,green.bold\" \"npm run tailwind:css-build\" \"npm run watch:js-build \" \"npm run start:server\""
+    "start": "concurrently --kill-others -c \"blue.bold,magenta.bold,green.bold\" \"npm run tailwind:css\" \"npm run watch:js \" \"npm run start:server\""
   },
   "author": "Harsh Parashar",
   "license": "ISC",
