@@ -7,10 +7,16 @@ const xss = require('xss-clean');
 const cookieParser = require('cookie-parser');
 // const hpp = require('hpp');
 const path = require('path');
+const authController = require('./controllers/authController');
+
 // const AppError = require('./utils/appError');
 // const globalErrorHandler = require('./controllers/errorController');
 const userRouter = require('./routes/API/userRoute');
-const viewRouter = require('./routes/View/userViewRoute');
+const viewRouter = require('./routes/View/authViewRoute');
+const articleViewRouter = require('./routes/View/articleViewRoute');
+const articleRouter = require('./routes/API/articleRoute');
+
+const globalErrorHandler = require('./controllers/errorController');
 
 const app = express();
 
@@ -72,10 +78,14 @@ app.use((req, res, next) => {
 // 3) ROUTES
 // 3.1 API Routes
 app.use('/api/v1/user', userRouter);
+app.use('/api/v1/article', articleRouter);
 
 // 3.2 View Routes
+app.use('/',authController.isLoggedIn)
 app.use('/', viewRouter);
+app.use('/article', articleViewRouter);
 
 // app.use(globalErrorHandler);
+app.use(globalErrorHandler);
 
 module.exports = app;

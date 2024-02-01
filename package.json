@@ -4,11 +4,11 @@
   "description": "A tech expo project , The goal of this web application is to provide information to disabled individuals to enchance there living conditions, including tips, jobs etc..",
   "main": "app.js",
   "scripts": {
-    "start:server": "nodemon server.js",
+    "start:server": "nodemon -e js,ejs server.js",
     "debug:ndb": "ndb server.js",
     "tailwind:css": "tailwindcss -i public/stylesheets/tailwind.css -o public/stylesheets/style.css --watch",
     "watch:js": "webpack --watch --config webpack.config.js",
-    "start": "concurrently --kill-others -c \"blue.bold,magenta.bold,green.bold\" \"npm run tailwind:css\" \"npm run start:server\" \"npm run watch:js \" "
+    "start": "concurrently --kill-others -c \"blue.bold,magenta.bold,green.bold\" \"npm run tailwind:css\" \"npm run watch:js \" \"npm run start:server\""
   },
   "author": "Harsh Parashar",
   "license": "ISC",
@@ -43,6 +43,7 @@
     "express": "^4.18.2",
     "express-mongo-sanitize": "^2.2.0",
     "express-rate-limit": "^7.1.5",
+    "flowbite": "^2.2.1",
     "gsap": "^3.12.5",
     "helmet": "^7.1.0",
     "hpp": "^0.2.3",
