@@ -956,6 +956,11 @@ select {
   margin-bottom: 1.5rem;
 }
 
+.my-12 {
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+}
+
 .-ml-10 {
   margin-left: -2.5rem;
 }
