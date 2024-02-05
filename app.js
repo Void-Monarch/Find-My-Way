@@ -16,6 +16,7 @@ const viewRouter = require('./routes/View/authViewRoute');
 const articleViewRouter = require('./routes/View/articleViewRoute');
 const jobViewRouter = require('./routes/View/jobsViewRoute');
 const articleRouter = require('./routes/API/articleRoute');
+const jobRouter = require('./routes/API/jobRoute');
 
 const globalErrorHandler = require('./controllers/errorController');
 
@@ -80,6 +81,7 @@ app.use((req, res, next) => {
 // 3.1 API Routes
 app.use('/api/v1/user', userRouter);
 app.use('/api/v1/article', articleRouter);
+app.use('/api/v1/jobs', jobRouter);
 
 // 3.2 View Routes
 app.use('/',authController.isLoggedIn)

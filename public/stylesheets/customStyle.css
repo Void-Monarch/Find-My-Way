@@ -76,15 +76,8 @@
 .cusNav {
   animation: fader 0.6s ease-in;
 }
-
 #acticle--section {
-  clip-path: polygon(11% 0, 100% 0, 100% 100%, 0 100%, 0 16%);
-}
-
-@media (min-width: 1536px) {
-  #acticleContainer {
-    grid-template-columns: repeat(4, minmax(0, 1fr));
-  }
+  /* clip-path: polygon(100% 0, 100% 87%, 89% 100%, 0 100%, 0 0); */
 }
 
 .article-hero-section {
@@ -95,6 +88,7 @@
     url('/assets/Tiny people searching for business opportunities-ai.png');
   background-position: center;
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: contain;
   position: relative;
 }
+
