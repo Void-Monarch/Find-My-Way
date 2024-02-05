@@ -1,0 +1,104 @@
+<section class="dark:bg-gray-800 dark:text-gray-100 ">
+  <div class="flex flex-row justify-end mx-auto px-6 my-4 sticky top-[5rem]">
+    <div class="flex lg:w-96">
+      <label for="search-dropdown" class="mb-2 text-sm font-medium text-gray-900 sr-only dark:text-white">Your
+        Email</label>
+      <button id="dropdown-button" data-dropdown-toggle="dropdown"
+        class="flex-shrink-0 z-10 inline-flex items-center py-2.5 px-4 text-sm font-medium text-center text-white  bg-gradient-to-r from-purple-500 via-purple-600 to-purple-700 hover:bg-gradient-to-br rounded-s-lg focus:ring-4 focus:outline-none "
+        type="button">All categories <svg class="w-2.5 h-2.5 ms-2.5" aria-hidden="true"
+          xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
+          <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+            d="m1 1 4 4 4-4" />
+        </svg></button>
+      <div id="dropdown" class="z-10 hidden bg-white divide-y divide-gray-100 rounded-lg shadow w-44 dark:bg-gray-700">
+        <ul class="py-2 text-sm text-gray-700 dark:text-gray-200" aria-labelledby="dropdown-button">
+          <li>
+            <button type="button"
+              class="inline-flex w-full px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Mockups</button>
+          </li>
+          <li>
+            <button type="button"
+              class="inline-flex w-full px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Templates</button>
+          </li>
+          <li>
+            <button type="button"
+              class="inline-flex w-full px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Design</button>
+          </li>
+          <li>
+            <button type="button"
+              class="inline-flex w-full px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Logos</button>
+          </li>
+        </ul>
+
+      </div>
+      <div class="relative w-full">
+        <input type="search" id="search-dropdown"
+          class="block p-2.5 w-full z-20 text-sm text-gray-900 bg-gray-50 rounded-e-lg border-s-gray-50 border-s-2 border border-gray-300 focus:ring-blue-500 focus:border-blue-500 "
+          placeholder="Search Mockups, Logos, Design Templates..." required>
+        <button type="submit"
+          class="absolute top-0 end-0 p-2.5 text-sm font-medium h-full text-white  bg-gradient-to-r from-purple-500 via-purple-600 to-purple-700 rounded-e-lg focus:outline-none">
+          <svg class="w-4 h-4" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 20 20">
+            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+              d="m19 19-4-4m0-7A7 7 0 1 1 1 8a7 7 0 0 1 14 0Z" />
+          </svg>
+          <span class="sr-only">Search</span>
+        </button>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- Article part -->
+  <div class="container max-w-6xl p-6 mx-auto space-y-6 sm:space-y-12">
+    <a rel="noopener noreferrer" href="#" class=" mx-auto group hover:no-underline focus:no-underline ">
+      <div class="grid xss:grid-rows-2 sm:grid-cols-2 sm:grid-rows-none gap-5">
+        <div class="flex">
+          <img
+            src="https://images.unsplash.com/photo-1485988412941-77a35537dae4?q=80&w=2096&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+            alt="" class="object-cover w-full h-64 rounded sm:h-96 lg:col-span-7 " />
+        </div>
+        <div class="p-6 block space-y-2">
+          <h3 class="text-2xl font-semibold sm:text-4xl group-hover:underline group-focus:underline">
+            Noster tincidunt reprimique ad pro
+          </h3>
+          <span class="text-xs dark:text-gray-400">February 19, 2021</span>
+          <p>
+            Ei delenit sensibus liberavisse pri. Quod suscipit no nam. Est in
+            graece fuisset, eos affert putent doctus id.
+          </p>
+        </div>
+      </div>
+    </a>
+    <center>
+      <hr class="bg-slate-500 opacity-80 h-0.5" width="0%" id="hr--hero-below">
+    </center>
+    <div class="grid justify-center grid-cols-1 gap-6 gap-y-8 sm:grid-cols-2 lg:grid-cols-3 ">
+      <% Data.forEach(el=> { %>
+        <!-- Each Document -->
+        <div class="">
+          <a rel="noopener noreferrer" href="#" class="max-w-sm mx-auto group hover:no-underline focus:no-underline ">
+            <img role="presentation" class="object-cover w-full rounded h-44 group-hover:brightness-[80%] "
+              src="https://source.unsplash.com/random/480x360?1" />
+            <div class="p-6 space-y-2 group-hover:bg-blue-100">
+              <h3 class="text-2xl font-semibold group-hover:underline group-focus:underline">
+                <%= el.title %>
+              </h3>
+              <span class="text-xs dark:text-gray-400">
+                <%= el.created_at.split("T")[0] %>
+              </span>
+              <p>
+                <%= el.description %>
+              </p>
+            </div>
+          </a>
+        </div>
+        <!-- Each Document END -->
+        <% }); %>
+    </div>
+    <div class="flex justify-center">
+      <button type="button" class="px-6 py-3 text-sm rounded-md hover:underline dark:bg-gray-900 dark:text-gray-400">
+        Load more posts...
+      </button>
+    </div>
+  </div>
+</section>
