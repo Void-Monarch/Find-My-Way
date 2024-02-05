@@ -14,6 +14,7 @@ const authController = require('./controllers/authController');
 const userRouter = require('./routes/API/userRoute');
 const viewRouter = require('./routes/View/authViewRoute');
 const articleViewRouter = require('./routes/View/articleViewRoute');
+const jobViewRouter = require('./routes/View/jobsViewRoute');
 const articleRouter = require('./routes/API/articleRoute');
 
 const globalErrorHandler = require('./controllers/errorController');
@@ -84,6 +85,7 @@ app.use('/api/v1/article', articleRouter);
 app.use('/',authController.isLoggedIn)
 app.use('/', viewRouter);
 app.use('/article', articleViewRouter);
+app.use('/jobs', jobViewRouter);
 
 // app.use(globalErrorHandler);
 app.use(globalErrorHandler);

@@ -3,6 +3,7 @@ const User = require('../models/userModel');
 const catchAsync = require('../utils/catchAsync');
 const AppError = require('../utils/appError');
 const APIFeatures = require('../utils/apiFeatures');
+const fs = require('fs');
 
 exports.findAll = catchAsync(async (req, res, next) => {
   const features = new APIFeatures(Article.find(), req.query)
@@ -27,6 +28,8 @@ exports.insertData = catchAsync(async (req, res) => {
     title: req.body.title,
     description: req.body.description,
     content: req.body.content,
+    number_of_likes: req.body.likes || 0,
+    number_of_comments: req.body.comments || 0,
   });
   //   Send response
   res.status(201).json({

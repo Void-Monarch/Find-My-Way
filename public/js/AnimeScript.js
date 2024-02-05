@@ -142,7 +142,6 @@ const sideBaritem = anime({
   autoplay: false,
 });
 
-
 export {
   anime,
   enterE,
@@ -151,5 +150,4 @@ export {
   interact_img,
   interact_pulse,
   sideBaritem,
-
 };

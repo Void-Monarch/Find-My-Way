@@ -31,7 +31,7 @@ const articleSchema = new Schema(
 articleSchema.pre(/^find/, function (next) {
   this.populate({
     path: 'author',
-    select: '-__v -passwordChangedAt',
+    select: '-__v',
   });
 
   next();

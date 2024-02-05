@@ -44,8 +44,6 @@
   clip-path: polygon(12% 0, 100% 0, 100% 82%, 88% 99%, 0 100%, 0 15%);
 }
 
-#interact {
-}
 #interact-tab-1 {
   transform: translateY(-100%);
 }
@@ -87,4 +85,16 @@
   #acticleContainer {
     grid-template-columns: repeat(4, minmax(0, 1fr));
   }
+}
+
+.article-hero-section {
+  background-image: linear-gradient(
+      rgba(126, 126, 126, 0.082),
+      rgba(126, 126, 126, 0.082)
+    ),
+    url('/assets/Tiny people searching for business opportunities-ai.png');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
 }
