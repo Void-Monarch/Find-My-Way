@@ -86,16 +86,20 @@ exports.getAllArticle = catchAsync(async (req, res, next) => {
 exports.getArticle = catchAsync(async (req, res, next) => {
   // check ID for number or Name
   const articleOne = await Article.findById(req.params.id);
-  // Tour.findOne({ _id: req.params.id })
 
   if (!articleOne) {
     return next(new AppError('No Article found with that ID', 404));
   }
 
-  res.status(200).json({
-    status: 'success',
-    data: {
+  try {
+    res.status(200).render('singleArticle', {
+      title: `Find My Way | ${articleOne.title} `,
+      User: res.locals.user,
       data: articleOne,
-    },
-  });
+    });
+  } catch (err) {
+    return next(
+      new AppError(`${err.response.statusText}`, err.response.status),
+    );
+  }
 });
