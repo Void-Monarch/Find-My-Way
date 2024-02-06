@@ -1,6 +1,9 @@
 const axios = require('axios');
+const Article = require('../models/articleModel');
 const User = require('../models/userModel');
 const catchAsync = require('../utils/catchAsync');
+const _ = require('lodash');
+const APIFeatures = require('../utils/apiFeatures');
 const AppError = require('../utils/appError');
 
 exports.getOverview = catchAsync(async (req, res, next) => {
@@ -78,4 +81,21 @@ exports.getAllArticle = catchAsync(async (req, res, next) => {
       new AppError(`${err.response.statusText}`, err.response.status),
     );
   }
+});
+
+exports.getArticle = catchAsync(async (req, res, next) => {
+  // check ID for number or Name
+  const articleOne = await Article.findById(req.params.id);
+  // Tour.findOne({ _id: req.params.id })
+
+  if (!articleOne) {
+    return next(new AppError('No Article found with that ID', 404));
+  }
+
+  res.status(200).json({
+    status: 'success',
+    data: {
+      data: articleOne,
+    },
+  });
 });
