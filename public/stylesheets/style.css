@@ -785,9 +785,9 @@ select {
   }
 }
 
-@media (min-width: 1600px) {
+@media (min-width: 2000px) {
   .container {
-    max-width: 1600px;
+    max-width: 2000px;
   }
 }
 
@@ -823,6 +823,11 @@ select {
   position: sticky;
 }
 
+.inset-y-0 {
+  top: 0px;
+  bottom: 0px;
+}
+
 .end-0 {
   inset-inline-end: 0px;
 }
@@ -853,6 +858,10 @@ select {
 
 .top-\[5rem\] {
   top: 5rem;
+}
+
+.right-0 {
+  right: 0px;
 }
 
 .z-10 {
@@ -1709,6 +1718,10 @@ select {
   padding-top: 1.5rem;
 }
 
+.pr-4 {
+  padding-right: 1rem;
+}
+
 .text-center {
   text-align: center;
 }
@@ -2046,6 +2059,12 @@ select {
 .focus\:ring-white:focus {
   --tw-ring-opacity: 1;
   --tw-ring-color: rgb(255 255 255 / var(--tw-ring-opacity));
+}
+
+.group:hover .group-hover\:scale-110 {
+  --tw-scale-x: 1.1;
+  --tw-scale-y: 1.1;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
 
 .group:hover .group-hover\:text-gray-900 {

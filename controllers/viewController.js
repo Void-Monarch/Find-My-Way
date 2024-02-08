@@ -61,10 +61,12 @@ exports.getAllJobs = catchAsync(async (req, res, next) => {
 // Articles
 exports.getAllArticle = catchAsync(async (req, res, next) => {
   try {
+    console.log(req.query);
     const AXIOSres = await axios({
       method: 'GET',
       url: 'http://127.0.0.1:3000/api/v1/article/',
       data: {},
+      params: req.query,
     });
 
     if (AXIOSres.data.status === 'success') {

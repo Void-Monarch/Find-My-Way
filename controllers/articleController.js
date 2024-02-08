@@ -10,12 +10,14 @@ exports.findAll = catchAsync(async (req, res, next) => {
     .filter()
     .sort()
     .limitFields()
-    .paginate();
+    .paginate()
+    .search();
 
   const articles = await features.query;
 
   res.status(200).json({
     status: 'success',
+    length: articles.length,
     data: {
       data: articles,
     },
