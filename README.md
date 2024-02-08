@@ -1,7 +1,10 @@
 # Find My Way
+   
+   ## Desciption for project (IGNORE)
+   Welcome to Find My Way, a Node.js web application designed to provide valuable information and resources to enhance the living conditions of disabled individuals. Our goal is to empower and support the disabled    community by offering tips, job opportunities, and other relevant information.
 
-## Description
-Find My Way is a dynamic web application built using Node.js, a powerful JavaScript runtime, renowned for its efficiency and scalability in building server-side applications. Leveraging the Express.js framework, the website ensures rapid development and robust routing capabilities, enabling seamless navigation and efficient handling of HTTP requests.
+# Description
+Find My Way is a dynamic web application built using Node.js, a powerful JavaScript runtime, renowned for its efficiency and scalability in building server-side applications. Leveraging the Express.js framework, the website ensures rapid development and robust routing capabilities, enabling seamless navigation and efficient handling of HTTP requests. The application itself is fully responsive to work on both large screen (laptops) and small screen devices ( mobile phones )
 
 In addition to its server-side prowess, Find My Way utilizes HTML, CSS, and JavaScript on the client side to deliver a visually appealing and interactive user experience. The frontend is crafted with a combination of modern web technologies, ensuring compatibility across various devices and browsers.
 
@@ -27,8 +30,13 @@ Furthermore, Find My Way incorporates various libraries and packages from the No
 1. Make sure you have [Node.js](https://nodejs.org/) installed on your machine.
 2. Clone the repository:
    ```bash
-   git clone https://github.com/your-username/find-my-way.git](https://github.com/Harsh-nodejs/Project-App.git)https://github.com/Harsh-nodejs/Project-App.git
-   cd Project-App
+   $ gh repo clone Harsh-nodejs/Project-App
+         or
+   $ git clone https://github.com/Harsh-nodejs/Project-App.git
+   ```
+   
+   ```
+   $ cd Project-App
    ```
 
 3. Install the node js depedencies from package.json :
@@ -90,3 +98,15 @@ Furthermore, Find My Way incorporates various libraries and packages from the No
  > ![image](https://github.com/Harsh-nodejs/Project-App/assets/153886419/cf479355-cacc-48db-91f2-d663ec4274ce)
 
    ## Mobile port 
+      ![image](https://github.com/Harsh-nodejs/Project-App/assets/153886419/70ae23c7-4318-4013-af31-ba0062db128c)
+      ![image](https://github.com/Harsh-nodejs/Project-App/assets/153886419/5e2fbd64-c973-4365-acc7-be0988523a7a)
+      ![image](https://github.com/Harsh-nodejs/Project-App/assets/153886419/136f13e4-8990-4d0b-9fdf-ec02e034c87e)
+      ![image](https://github.com/Harsh-nodejs/Project-App/assets/153886419/788cba95-9388-463f-859a-6bf38c3cd0ee)
+      ![image](https://github.com/Harsh-nodejs/Project-App/assets/153886419/8a03988f-c342-45b9-bb86-04397e1b0d93)
+      **Error Page**
+      ![image](https://github.com/Harsh-nodejs/Project-App/assets/153886419/d28081a7-60a2-4221-97d7-c3a1a81d0a70)
+
+
+      
+
+
