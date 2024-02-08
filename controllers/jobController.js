@@ -39,16 +39,7 @@ exports.insertData = catchAsync(async (req, res) => {
   res.status(201).json({
     status: 'success',
     data: {
-      data: 'jobNew',
+      data: jobNew,
     },
   });
 });
-
-// fs.readFile('./csvjson.json', 'UTF-8', (err, data) => {
-//   data = JSON.parse(data);
-//   data.forEach(async (el) => {
-//     const jobNew = await Job.create({
-
-//     });
-//   });
-// });

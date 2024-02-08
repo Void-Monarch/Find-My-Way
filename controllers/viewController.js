@@ -104,3 +104,12 @@ exports.getArticle = catchAsync(async (req, res, next) => {
     );
   }
 });
+
+exports.getUserMe = catchAsync(async (req, res, next) => {
+  // Axios request
+  
+  res.status(200).render('userMeProfile', {
+    title: `Find My Way | Profile`,
+    User: res.locals.user,
+    });
+});

@@ -13,6 +13,7 @@ const authController = require('./controllers/authController');
 // const globalErrorHandler = require('./controllers/errorController');
 const userRouter = require('./routes/API/userRoute');
 const viewRouter = require('./routes/View/authViewRoute');
+const UserViewRouter = require('./routes/View/userViewRoute');
 const articleViewRouter = require('./routes/View/articleViewRoute');
 const jobViewRouter = require('./routes/View/jobsViewRoute');
 const articleRouter = require('./routes/API/articleRoute');
@@ -84,8 +85,9 @@ app.use('/api/v1/article', articleRouter);
 app.use('/api/v1/jobs', jobRouter);
 
 // 3.2 View Routes
-app.use('/', authController.isLoggedIn);
+app.use('/', authController.isLoggedIn); // Checks wheather the user is logged in or not.
 app.use('/', viewRouter);
+app.use('/user', UserViewRouter);
 app.use('/article', articleViewRouter);
 app.use('/jobs', jobViewRouter);
 
