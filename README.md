@@ -18,10 +18,10 @@ Furthermore, Find My Way incorporates various libraries and packages from the No
 
 ## Tech stack
 > - NodeJs >=20.0.1
- - Tailwind CSS >=3.0.0
- - Ejs
- - Mongoose 8
- - MongoDB
+> - Tailwind CSS >=3.0.0
+> - Ejs
+> - Mongoose 8
+> - MongoDB
 
 ## Installation
 1. Make sure you have [Node.js](https://nodejs.org/) installed on your machine.
