@@ -18,7 +18,7 @@ Furthermore, Find My Way incorporates various libraries and packages from the No
 - Mongoose: An elegant MongoDB object modeling tool for Node.js, providing a schema-based solution to interact with MongoDB databases.
 - Tailwind CSS: Version 3.4.1, a utility-first CSS framework for creating custom designs and responsive layouts with minimal CSS code.
 - JWT: Using JWT token authentication. Self written JWT controller. Present in
-   > controller / authController
+   > Project-App / controller / authController.js
 
 
 ## Tech stack
