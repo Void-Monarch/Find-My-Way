@@ -1,13 +1,27 @@
 # Find My Way
 
 ## Description
-Welcome to Find My Way, a Node.js web application designed to provide valuable information and resources to enhance the living conditions of disabled individuals. Our goal is to empower and support the disabled community by offering tips, job opportunities, and other relevant information.
+Find My Way is a dynamic web application built using Node.js, a powerful JavaScript runtime, renowned for its efficiency and scalability in building server-side applications. Leveraging the Express.js framework, the website ensures rapid development and robust routing capabilities, enabling seamless navigation and efficient handling of HTTP requests.
 
-## Features
-- **User-Friendly Interface:** The website boasts an intuitive and accessible design to cater to users of all abilities.
-- **Tips and Resources:** Access a wide range of tips and resources aimed at improving the quality of life for disabled individuals.
-- **Job Listings:** Explore job opportunities tailored to the needs and abilities of disabled individuals.
-- **Community Support:** Connect with others in the disabled community for shared experiences and support.
+In addition to its server-side prowess, Find My Way utilizes HTML, CSS, and JavaScript on the client side to deliver a visually appealing and interactive user experience. The frontend is crafted with a combination of modern web technologies, ensuring compatibility across various devices and browsers.
+
+For data storage and retrieval, Find My Way employs MongoDB, a flexible and scalable NoSQL database, ideal for managing diverse datasets with ease. MongoDB's document-based structure allows for efficient storage and retrieval of information, enabling seamless integration with Node.js applications.
+
+Furthermore, Find My Way incorporates various libraries and packages from the Node.js ecosystem to enhance functionality and streamline development. These may include but are not limited to:
+- Node.js: Version 20.0.0 or higher, providing the runtime environment for server-side JavaScript execution.
+- Express: A minimalist web application framework for Node.js, facilitating the creation of robust and scalable web applications and APIs.
+- EJS: A simple and flexible templating engine for rendering dynamic HTML content on the server side.
+- MongoDB: A NoSQL database solution used for storing and managing structured data, offering flexibility and scalability for web applications.
+- Mongoose: An elegant MongoDB object modeling tool for Node.js, providing a schema-based solution to interact with MongoDB databases.
+- Tailwind CSS: Version 3.4.1, a utility-first CSS framework for creating custom designs and responsive layouts with minimal CSS code.
+
+
+## Tech stack
+> NodeJs >=20.0.1
+> Tailwind CSS >=3.0.0
+> Ejs
+> Mongoose 8
+> MongoDB
 
 ## Installation
 1. Make sure you have [Node.js](https://nodejs.org/) installed on your machine.
@@ -75,3 +89,4 @@ Welcome to Find My Way, a Node.js web application designed to provide valuable i
  ## Error Page
  > ![image](https://github.com/Harsh-nodejs/Project-App/assets/153886419/cf479355-cacc-48db-91f2-d663ec4274ce)
 
+   ## Mobile port 
