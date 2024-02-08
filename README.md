@@ -4,9 +4,9 @@
    Welcome to Find My Way, a Node.js web application designed to provide valuable information and resources to enhance the living conditions of disabled individuals. Our goal is to empower and support the disabled    community by offering tips, job opportunities, and other relevant information.
 
 # Description
-Find My Way is a dynamic web application built using Node.js, a powerful JavaScript runtime, renowned for its efficiency and scalability in building server-side applications. Leveraging the Express.js framework, the website ensures rapid development and robust routing capabilities, enabling seamless navigation and efficient handling of HTTP requests. The application itself is fully responsive to work on both large screen (laptops) and small screen devices ( mobile phones )
+Find My Way is a dynamic web application built using Node.js, a powerful JavaScript runtime, renowned for its efficiency and scalability in building server-side applications. Leveraging the Express.js framework, the website ensures rapid development and robust routing capabilities, enabling seamless navigation and efficient handling of HTTP requests.fully responsive to work on both large screen (laptops) and small screen devices ( mobile phones )
 
-In addition to its server-side prowess, Find My Way utilizes HTML, CSS, and JavaScript on the client side to deliver a visually appealing and interactive user experience. The frontend is crafted with a combination of modern web technologies, ensuring compatibility across various devices and browsers.
+In addition to its server-side prowess, Find My Way utilizes HTML, CSS, and JavaScript on the client side to deliver a visually appealing and interactive user experience. The frontend is crafted with a combination of modern web technologies, ensuring compatibility across various devices and browsers. Fully responsive design to work on both large screen (laptops) and small screen devices ( mobile phones )
 
 For data storage and retrieval, Find My Way employs MongoDB, a flexible and scalable NoSQL database, ideal for managing diverse datasets with ease. MongoDB's document-based structure allows for efficient storage and retrieval of information, enabling seamless integration with Node.js applications.
 
@@ -17,6 +17,8 @@ Furthermore, Find My Way incorporates various libraries and packages from the No
 - MongoDB: A NoSQL database solution used for storing and managing structured data, offering flexibility and scalability for web applications.
 - Mongoose: An elegant MongoDB object modeling tool for Node.js, providing a schema-based solution to interact with MongoDB databases.
 - Tailwind CSS: Version 3.4.1, a utility-first CSS framework for creating custom designs and responsive layouts with minimal CSS code.
+- JWT: Using JWT token authentication. Self written JWT controller. Present in
+   > controller / authController
 
 
 ## Tech stack
@@ -25,6 +27,8 @@ Furthermore, Find My Way incorporates various libraries and packages from the No
 > - Ejs
 > - Mongoose 8
 > - MongoDB
+> - JWT
+> - webpack
 
 ## Installation
 1. Make sure you have [Node.js](https://nodejs.org/) installed on your machine.
