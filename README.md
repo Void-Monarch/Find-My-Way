@@ -26,7 +26,8 @@ Welcome to Find My Way, a Node.js web application designed to provide valuable i
    > Change extention of config to config.env and fill the required <DATA>
    
 5. After configuring the config file and setting up MongoDB use can use the dummy data in ' ./public/Dev-utils/DB data for testing or Demo/ '
->  └── Project-App/
+
+    └── Project-App/
        ├── public/
        │   └── Dev-util/
        │       └── DB data for testing or Demo/
