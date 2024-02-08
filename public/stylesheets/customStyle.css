@@ -85,10 +85,21 @@
       rgba(126, 126, 126, 0.082),
       rgba(126, 126, 126, 0.082)
     ),
-    url('/assets/Tiny people searching for business opportunities-ai.png');
+    url('/assets/blog_Art.png');
   background-position: center;
   background-repeat: no-repeat;
   background-size: contain;
   position: relative;
 }
 
+.job-hero-section {
+  background-image: linear-gradient(
+      rgba(126, 126, 126, 0.082),
+      rgba(126, 126, 126, 0.082)
+    ),
+    url('/assets/Tiny people searching for business opportunities-ai.png');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  position: relative;
+}

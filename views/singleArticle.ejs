@@ -1,0 +1,22 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <%- include('./partials/_head_') %>
+    <title><%= title %></title>
+  </head>
+  <body
+    class="scroll-smooth bg-slate-100 overflow-x-hidden"
+    id="body"
+    style="scroll-behavior: smooth"
+  >
+    <!-- NavBar -->
+    <header class="navbar-header top-0 w-screen">
+      <%- include('./partials/_navSide')%>
+    </header>
+    <!-- Hero Section -->
+    <%- include('./partials/_single_Article') %>
+    <!-- content -->
+    <!-- Scripts Import  -->
+    <%- include('./partials/_foot_script') %>
+  </body>
+</html>

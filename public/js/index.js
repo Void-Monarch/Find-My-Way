@@ -9,7 +9,9 @@ import { sideItemIn, itemSwell } from './sideBarAnime';
 import { login, logout, signup } from './login';
 
 // All imported fuction exec //
-stickNav();
+try {
+  stickNav();
+} catch (err) {console.log("Nav is not intersecting");}
 
 try {
   revealEnterOffice();
