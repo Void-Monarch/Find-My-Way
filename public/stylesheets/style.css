@@ -2077,6 +2077,11 @@ select {
   color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
+.hover\:text-purple-500:hover {
+  --tw-text-opacity: 1;
+  color: rgb(168 85 247 / var(--tw-text-opacity));
+}
+
 .hover\:underline:hover {
   text-decoration-line: underline;
 }
@@ -2176,9 +2181,26 @@ select {
 }
 
 @media (min-width: 250px) {
+  .xss\:top-\[\] {
+    top: ;
+  }
+
+  .xss\:top-\[3rem\] {
+    top: 3rem;
+  }
+
+  .xss\:top-\[3\.1rem\] {
+    top: 3.1rem;
+  }
+
   .xss\:mx-4 {
     margin-left: 1rem;
     margin-right: 1rem;
+  }
+
+  .xss\:my-2 {
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
   }
 
   .xss\:mb-0 {
@@ -2311,6 +2333,10 @@ select {
 }
 
 @media (min-width: 640px) {
+  .sm\:top-\[5rem\] {
+    top: 5rem;
+  }
+
   .sm\:mx-0 {
     margin-left: 0px;
     margin-right: 0px;
@@ -2324,6 +2350,11 @@ select {
   .sm\:mx-auto {
     margin-left: auto;
     margin-right: auto;
+  }
+
+  .sm\:my-4 {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
   }
 
   .sm\:mb-0 {
