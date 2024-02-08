@@ -1,0 +1,437 @@
+[{
+  "_id": {
+    "$oid": "65c09da541bfea8c79d734fe"
+  },
+  "author": {
+    "$oid": "65b737d1c3e0087f9718db8a"
+  },
+  "title": "Introduction to MongoDB",
+  "description": "Learn the basics of MongoDB and its key features.",
+  "content": "MongoDB is a NoSQL database that provides high performance and scalability. In this article, we'll cover the fundamentals, including document-oriented data, flexible schema design, and the use of indexes to optimize queries.",
+  "tags": {
+    "default": []
+  },
+  "number_of_likes": 25,
+  "number_of_comments": 10,
+  "created_at": {
+    "$date": "2024-02-05T08:34:45.429Z"
+  },
+  "updated_at": {
+    "$date": "2024-02-05T08:34:45.429Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "65c09da541bfea8c79d734ff"
+  },
+  "author": {
+    "$oid": "65b737d1c3e0087f9718db8a"
+  },
+  "title": "Building a RESTful API with Node.js and MongoDB",
+  "description": "Create a RESTful API using Node.js and MongoDB for your web applications.",
+  "content": "In this comprehensive guide, we'll walk you through the process of building a robust API with Node.js and MongoDB. Topics include routing, middleware, error handling, and best practices for working with MongoDB as your data store.",
+  "tags": {
+    "default": []
+  },
+  "number_of_likes": 30,
+  "number_of_comments": 15,
+  "created_at": {
+    "$date": "2024-02-05T08:34:45.430Z"
+  },
+  "updated_at": {
+    "$date": "2024-02-05T08:34:45.430Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "65c09da541bfea8c79d73502"
+  },
+  "author": {
+    "$oid": "65b737d1c3e0087f9718db8a"
+  },
+  "title": "Scaling MongoDB for High Traffic Applications",
+  "description": "Explore strategies for scaling MongoDB to handle high traffic and large datasets.",
+  "content": "Discover sharding, replication, and other advanced techniques to scale MongoDB for high-traffic applications. We'll discuss considerations, trade-offs, and best practices for achieving optimal performance.",
+  "tags": {
+    "default": []
+  },
+  "number_of_likes": 35,
+  "number_of_comments": 12,
+  "created_at": {
+    "$date": "2024-02-05T08:34:45.430Z"
+  },
+  "updated_at": {
+    "$date": "2024-02-05T08:34:45.430Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "65c09da541bfea8c79d73503"
+  },
+  "author": {
+    "$oid": "65b737d1c3e0087f9718db8a"
+  },
+  "title": "MongoDB Indexing Strategies",
+  "description": "Understand the importance of indexing in MongoDB for efficient query performance.",
+  "content": "This article delves into different indexing strategies in MongoDB, covering single-field and compound indexes, text search indexes, and tips for choosing the right indexes for your queries.",
+  "tags": {
+    "default": []
+  },
+  "number_of_likes": 18,
+  "number_of_comments": 7,
+  "created_at": {
+    "$date": "2024-02-05T08:34:45.430Z"
+  },
+  "updated_at": {
+    "$date": "2024-02-05T08:34:45.430Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "65c09da541bfea8c79d73504"
+  },
+  "author": {
+    "$oid": "65b737d1c3e0087f9718db8a"
+  },
+  "title": "Data Modeling in MongoDB",
+  "description": "Learn the principles of effective data modeling in MongoDB for your applications.",
+  "content": "Explore the document data model and understand how to design schemas that align with your application's requirements. We'll cover relationships, embedded documents, and best practices.",
+  "tags": {
+    "default": []
+  },
+  "number_of_likes": 22,
+  "number_of_comments": 9,
+  "created_at": {
+    "$date": "2024-02-05T08:34:45.430Z"
+  },
+  "updated_at": {
+    "$date": "2024-02-05T08:34:45.430Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "65c09da541bfea8c79d73505"
+  },
+  "author": {
+    "$oid": "65b737d1c3e0087f9718db8a"
+  },
+  "title": "Optimizing MongoDB Queries",
+  "description": "Optimize your MongoDB queries for better performance and efficiency.",
+  "content": "In this guide, we'll discuss query optimization techniques, including the use of indexes, query hints, and profiling. Learn how to identify and resolve common performance bottlenecks in your MongoDB queries.",
+  "tags": {
+    "default": []
+  },
+  "number_of_likes": 28,
+  "number_of_comments": 11,
+  "created_at": {
+    "$date": "2024-02-05T08:34:45.430Z"
+  },
+  "updated_at": {
+    "$date": "2024-02-05T08:34:45.430Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "65c09da541bfea8c79d73506"
+  },
+  "author": {
+    "$oid": "65b737d1c3e0087f9718db8a"
+  },
+  "title": "Backup and Restore Strategies for MongoDB",
+  "description": "Implement effective backup and restore strategies to safeguard your MongoDB data.",
+  "content": "This article covers various methods and tools for backing up and restoring MongoDB databases. Whether you're using cloud services or on-premises solutions, ensure the integrity and availability of your data.",
+  "tags": {
+    "default": []
+  },
+  "number_of_likes": 25,
+  "number_of_comments": 10,
+  "created_at": {
+    "$date": "2024-02-05T08:34:45.430Z"
+  },
+  "updated_at": {
+    "$date": "2024-02-05T08:34:45.430Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "65c09da541bfea8c79d73507"
+  },
+  "author": {
+    "$oid": "65b737d1c3e0087f9718db8a"
+  },
+  "title": "Real-time Data with MongoDB Change Streams",
+  "description": "Harness the power of real-time data with MongoDB Change Streams.",
+  "content": "Learn how to use MongoDB Change Streams to capture and react to changes in your data in real-time. We'll explore use cases and implementation details for building responsive applications.",
+  "tags": {
+    "default": []
+  },
+  "number_of_likes": 30,
+  "number_of_comments": 15,
+  "created_at": {
+    "$date": "2024-02-05T08:34:45.430Z"
+  },
+  "updated_at": {
+    "$date": "2024-02-05T08:34:45.430Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "65c09da541bfea8c79d73508"
+  },
+  "author": {
+    "$oid": "65b737d1c3e0087f9718db8a"
+  },
+  "title": "Working with Geospatial Data in MongoDB",
+  "description": "Explore geospatial data capabilities in MongoDB for location-based applications.",
+  "content": "This guide covers the use of geospatial indexes and queries in MongoDB to support location-based features. Whether you're building a mapping application or need proximity-based search, this article has you covered.",
+  "tags": {
+    "default": []
+  },
+  "number_of_likes": 20,
+  "number_of_comments": 8,
+  "created_at": {
+    "$date": "2024-02-05T08:34:45.430Z"
+  },
+  "updated_at": {
+    "$date": "2024-02-05T08:34:45.430Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "65c09da541bfea8c79d73509"
+  },
+  "author": {
+    "$oid": "65b737d1c3e0087f9718db8a"
+  },
+  "title": "MongoDB Atlas: A Cloud-Based Database Solution",
+  "description": "Discover the benefits of using MongoDB Atlas for managing MongoDB databases in the cloud.",
+  "content": "This article provides an overview of MongoDB Atlas, covering key features such as automated backups, scaling, and security. Explore how to set up and manage your MongoDB deployment in the cloud.",
+  "tags": {
+    "default": []
+  },
+  "number_of_likes": 15,
+  "number_of_comments": 5,
+  "created_at": {
+    "$date": "2024-02-05T08:34:45.430Z"
+  },
+  "updated_at": {
+    "$date": "2024-02-05T08:34:45.430Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "65c09da541bfea8c79d73500"
+  },
+  "author": {
+    "$oid": "65b737d1c3e0087f9718db8a"
+  },
+  "title": "Advanced Querying with MongoDB Aggregation Framework",
+  "description": "Master the art of data aggregation in MongoDB with the Aggregation Framework.",
+  "content": "Explore powerful techniques for querying and analyzing your data using MongoDB's Aggregation Framework. We'll cover pipeline stages, operators, and real-world examples to help you harness the full potential of this feature.",
+  "tags": {
+    "default": []
+  },
+  "number_of_likes": 20,
+  "number_of_comments": 8,
+  "created_at": {
+    "$date": "2024-02-05T08:34:45.430Z"
+  },
+  "updated_at": {
+    "$date": "2024-02-05T08:34:45.430Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "65c09da541bfea8c79d73501"
+  },
+  "author": {
+    "$oid": "65b737d1c3e0087f9718db8a"
+  },
+  "title": "Securing Your MongoDB Database",
+  "description": "Learn best practices for securing your MongoDB database and protecting your data.",
+  "content": "Discover how to set up authentication, encryption, and access controls to ensure the security of your MongoDB database. This article provides step-by-step instructions and tips for a robust security posture.",
+  "tags": {
+    "default": []
+  },
+  "number_of_likes": 15,
+  "number_of_comments": 5,
+  "created_at": {
+    "$date": "2024-02-05T08:34:45.430Z"
+  },
+  "updated_at": {
+    "$date": "2024-02-05T08:34:45.430Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "65c09da541bfea8c79d7350d"
+  },
+  "author": {
+    "$oid": "65b737d1c3e0087f9718db8a"
+  },
+  "title": "MongoDB and Spring Boot Integration",
+  "description": "Integrate MongoDB with Spring Boot for seamless Java-based application development.",
+  "content": "This guide provides step-by-step instructions on setting up a Spring Boot application with MongoDB. Learn how to perform CRUD operations, handle relationships, and leverage Spring Data MongoDB.",
+  "tags": {
+    "default": []
+  },
+  "number_of_likes": 28,
+  "number_of_comments": 11,
+  "created_at": {
+    "$date": "2024-02-05T08:34:45.431Z"
+  },
+  "updated_at": {
+    "$date": "2024-02-05T08:34:45.431Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "65c09da541bfea8c79d7350c"
+  },
+  "author": {
+    "$oid": "65b737d1c3e0087f9718db8a"
+  },
+  "title": "MongoDB Performance Tuning",
+  "description": "Fine-tune the performance of your MongoDB deployment for optimal results.",
+  "content": "Explore performance tuning techniques, including configuration settings, monitoring tools, and best practices. Ensure your MongoDB database operates at peak efficiency for your application's demands.",
+  "tags": {
+    "default": []
+  },
+  "number_of_likes": 22,
+  "number_of_comments": 9,
+  "created_at": {
+    "$date": "2024-02-05T08:34:45.431Z"
+  },
+  "updated_at": {
+    "$date": "2024-02-05T08:34:45.431Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "65c09da541bfea8c79d7350f"
+  },
+  "author": {
+    "$oid": "65b737d1c3e0087f9718db8a"
+  },
+  "title": "Best Practices for MongoDB Schema Design",
+  "description": "Follow best practices for designing effective MongoDB schemas.",
+  "content": "From denormalization to avoiding the pitfalls of excessive embedding, this guide provides insights and tips for designing MongoDB schemas that meet your application's requirements and scale effectively.",
+  "tags": {
+    "default": []
+  },
+  "number_of_likes": 30,
+  "number_of_comments": 15,
+  "created_at": {
+    "$date": "2024-02-05T08:34:45.431Z"
+  },
+  "updated_at": {
+    "$date": "2024-02-05T08:34:45.431Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "65c09da541bfea8c79d7350e"
+  },
+  "author": {
+    "$oid": "65b737d1c3e0087f9718db8a"
+  },
+  "title": "MongoDB vs. SQL: Choosing the Right Database for Your Project",
+  "description": "Compare MongoDB and SQL databases to make informed decisions for your project.",
+  "content": "This article explores the differences between MongoDB and traditional SQL databases, highlighting use cases, performance considerations, and factors to consider when choosing the right database for your application.",
+  "tags": {
+    "default": []
+  },
+  "number_of_likes": 25,
+  "number_of_comments": 10,
+  "created_at": {
+    "$date": "2024-02-05T08:34:45.431Z"
+  },
+  "updated_at": {
+    "$date": "2024-02-05T08:34:45.431Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "65c09da541bfea8c79d73510"
+  },
+  "author": {
+    "$oid": "65b737d1c3e0087f9718db8a"
+  },
+  "title": "MongoDB Change History and Auditing",
+  "description": "Implement change history and auditing in MongoDB to track data modifications.",
+  "content": "This article covers strategies for tracking changes to your MongoDB data, including document versioning and auditing. Ensure accountability and traceability in your MongoDB database.",
+  "tags": {
+    "default": []
+  },
+  "number_of_likes": 20,
+  "number_of_comments": 8,
+  "created_at": {
+    "$date": "2024-02-05T08:34:45.431Z"
+  },
+  "updated_at": {
+    "$date": "2024-02-05T08:34:45.431Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "65c09da541bfea8c79d7350b"
+  },
+  "author": {
+    "$oid": "65b737d1c3e0087f9718db8a"
+  },
+  "title": "Full-Text Search in MongoDB",
+  "description": "Implement full-text search capabilities in MongoDB for text-heavy applications.",
+  "content": "This article walks you through the setup and usage of MongoDB's text search features. From creating text indexes to performing complex text queries, master the art of full-text search in MongoDB.",
+  "tags": {
+    "default": []
+  },
+  "number_of_likes": 18,
+  "number_of_comments": 7,
+  "created_at": {
+    "$date": "2024-02-05T08:34:45.430Z"
+  },
+  "updated_at": {
+    "$date": "2024-02-05T08:34:45.430Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "65c09da541bfea8c79d7350a"
+  },
+  "author": {
+    "$oid": "65b737d1c3e0087f9718db8a"
+  },
+  "title": "MongoDB Transactions: ACID Compliance",
+  "description": "Understand MongoDB's support for transactions and ensure ACID compliance.",
+  "content": "In this in-depth exploration, we'll cover the concepts of transactions, isolation levels, and how MongoDB ensures data consistency in multi-document transactions. Ensure the integrity of your data with MongoDB transactions.",
+  "tags": {
+    "default": []
+  },
+  "number_of_likes": 35,
+  "number_of_comments": 12,
+  "created_at": {
+    "$date": "2024-02-05T08:34:45.430Z"
+  },
+  "updated_at": {
+    "$date": "2024-02-05T08:34:45.430Z"
+  },
+  "__v": 0
+}]

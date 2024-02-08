@@ -1,0 +1,36 @@
+[{
+  "_id": {
+    "$oid": "65b737d1c3e0087f9718db8a"
+  },
+  "name": "Harsh Test",
+  "email": "ex@ex.com",
+  "role": "user",
+  "gender": "male",
+  "password": "$2a$12$Ti8leAp5QWQC8Ff8AOToD.96Dlo9eIetCeGWbqESllqoskqeYhpTG",
+  "active": true,
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "65b8a1bd2057aa8fb5883bc7"
+  },
+  "name": "Void Monarch",
+  "email": "ex2@ex.com",
+  "role": "user",
+  "gender": "male",
+  "password": "$2a$12$u1DysxC7W7DsG1K0oK5rI.rXTKKEzqDlR8xVkcecd2whx8LiJ77om",
+  "active": true,
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "65c1c1722fe8d1c90f168dd5"
+  },
+  "name": "harsh new",
+  "email": "ex3@ex.com",
+  "role": "user",
+  "gender": "male",
+  "password": "$2a$12$ZChsZ9wR0FiKJ3eE/0hICeHz95VkCbOki.jLx633oT0gDey0614la",
+  "active": true,
+  "__v": 0
+}]

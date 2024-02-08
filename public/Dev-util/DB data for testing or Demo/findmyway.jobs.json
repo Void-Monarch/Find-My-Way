@@ -1,0 +1,540 @@
+[{
+  "_id": {
+    "$oid": "65c0c010047a8a57573c6084"
+  },
+  "author": {
+    "$oid": "65b737d1c3e0087f9718db8a"
+  },
+  "title": "Software Engineer",
+  "job_position": "Full Stack Developer",
+  "description": "We are looking for a skilled Full Stack Developer to join our innovative team. As a Software Engineer, you will be responsible for designing, developing, and maintaining software applications from end to end.",
+  "location": "San Francisco",
+  "company": "Tech Innovators Inc.",
+  "job_type": "Full Time",
+  "min_salary": "100000",
+  "max_salary": "120000",
+  "tags": {
+    "default": []
+  },
+  "number_of_applicants": 15,
+  "created_at": {
+    "$date": "2024-02-05T11:01:36.817Z"
+  },
+  "updated_at": {
+    "$date": "2024-02-05T11:01:36.817Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "65c0c010047a8a57573c6085"
+  },
+  "author": {
+    "$oid": "65b737d1c3e0087f9718db8a"
+  },
+  "title": "Data Scientist",
+  "job_position": "Machine Learning Engineer",
+  "description": "Join our data science team as a Machine Learning Engineer. You will work on cutting-edge projects, develop and implement machine learning models, and contribute to the analysis of large datasets.",
+  "location": "New York",
+  "company": "Data Insights Co.",
+  "job_type": "Full Time",
+  "min_salary": "120000",
+  "max_salary": "150000",
+  "tags": {
+    "default": []
+  },
+  "number_of_applicants": 20,
+  "created_at": {
+    "$date": "2024-02-05T11:01:36.817Z"
+  },
+  "updated_at": {
+    "$date": "2024-02-05T11:01:36.817Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "65c0c010047a8a57573c6086"
+  },
+  "author": {
+    "$oid": "65b737d1c3e0087f9718db8a"
+  },
+  "title": "UX/UI Designer",
+  "job_position": "Senior Designer",
+  "description": "We are seeking a talented Senior UX/UI Designer to create visually stunning and intuitive user interfaces. Collaborate with cross-functional teams to bring designs from concept to implementation.",
+  "location": "Los Angeles",
+  "company": "Design Excellence Ltd.",
+  "job_type": "Full Time",
+  "min_salary": "90000",
+  "max_salary": "110000",
+  "tags": {
+    "default": []
+  },
+  "number_of_applicants": 12,
+  "created_at": {
+    "$date": "2024-02-05T11:01:36.817Z"
+  },
+  "updated_at": {
+    "$date": "2024-02-05T11:01:36.817Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "65c0c010047a8a57573c608b"
+  },
+  "author": {
+    "$oid": "65b737d1c3e0087f9718db8a"
+  },
+  "title": "Human Resources Specialist",
+  "job_position": "HR Generalist",
+  "description": "We are hiring an HR Generalist to support various HR functions. Responsibilities include recruitment, employee relations, and implementing HR policies.",
+  "location": "Austin",
+  "company": "HR Solutions Inc.",
+  "job_type": "Full Time",
+  "min_salary": "70000",
+  "max_salary": "90000",
+  "tags": {
+    "default": []
+  },
+  "number_of_applicants": 15,
+  "created_at": {
+    "$date": "2024-02-05T11:01:36.818Z"
+  },
+  "updated_at": {
+    "$date": "2024-02-05T11:01:36.818Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "65c0c010047a8a57573c608a"
+  },
+  "author": {
+    "$oid": "65b737d1c3e0087f9718db8a"
+  },
+  "title": "Sales Representative",
+  "job_position": "Account Executive",
+  "description": "Join our sales team as an Account Executive. Identify and acquire new clients, build and maintain client relationships, and achieve sales targets.",
+  "location": "Denver",
+  "company": "Sales Pros LLC",
+  "job_type": "Part Time",
+  "min_salary": "80000",
+  "max_salary": "100000",
+  "tags": {
+    "default": []
+  },
+  "number_of_applicants": 20,
+  "created_at": {
+    "$date": "2024-02-05T11:01:36.818Z"
+  },
+  "updated_at": {
+    "$date": "2024-02-05T11:01:36.818Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "65c0c010047a8a57573c6089"
+  },
+  "author": {
+    "$oid": "65b737d1c3e0087f9718db8a"
+  },
+  "title": "Project Manager",
+  "job_position": "IT Project Manager",
+  "description": "Manage IT projects from initiation to completion. The role involves project planning, execution, and ensuring projects are delivered on time and within scope.",
+  "location": "Seattle",
+  "company": "Tech Solutions Group",
+  "job_type": "Full Time",
+  "min_salary": "110000",
+  "max_salary": "130000",
+  "tags": {
+    "default": []
+  },
+  "number_of_applicants": 25,
+  "created_at": {
+    "$date": "2024-02-05T11:01:36.818Z"
+  },
+  "updated_at": {
+    "$date": "2024-02-05T11:01:36.818Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "65c0c010047a8a57573c608c"
+  },
+  "author": {
+    "$oid": "65b737d1c3e0087f9718db8a"
+  },
+  "title": "Network Engineer",
+  "job_position": "Senior Network Engineer",
+  "description": "Join our IT team as a Senior Network Engineer. Design, implement, and maintain network infrastructure. Experience with Cisco and Juniper technologies is preferred.",
+  "location": "San Diego",
+  "company": "Network Tech Solutions",
+  "job_type": "Full Time",
+  "min_salary": "100000",
+  "max_salary": "120000",
+  "tags": {
+    "default": []
+  },
+  "number_of_applicants": 18,
+  "created_at": {
+    "$date": "2024-02-05T11:01:36.818Z"
+  },
+  "updated_at": {
+    "$date": "2024-02-05T11:01:36.818Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "65c0c010047a8a57573c608d"
+  },
+  "author": {
+    "$oid": "65b737d1c3e0087f9718db8a"
+  },
+  "title": "Graphic Designer",
+  "job_position": "Creative Designer",
+  "description": "We're looking for a Creative Designer with a strong portfolio. Create visual assets for digital and print media, collaborate with marketing, and stay updated on design trends.",
+  "location": "Miami",
+  "company": "Visual Impact Studios",
+  "job_type": "Part Time",
+  "min_salary": "75000",
+  "max_salary": "95000",
+  "tags": {
+    "default": []
+  },
+  "number_of_applicants": 14,
+  "created_at": {
+    "$date": "2024-02-05T11:01:36.818Z"
+  },
+  "updated_at": {
+    "$date": "2024-02-05T11:01:36.818Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "65c0c010047a8a57573c608e"
+  },
+  "author": {
+    "$oid": "65b737d1c3e0087f9718db8a"
+  },
+  "title": "Product Manager",
+  "job_position": "Senior Product Manager",
+  "description": "Lead product development initiatives and drive the product roadmap. Collaborate with cross-functional teams and ensure the successful delivery of high-quality products.",
+  "location": "San Francisco",
+  "company": "Product Innovations Inc.",
+  "job_type": "Full Time",
+  "min_salary": "120000",
+  "max_salary": "140000",
+  "tags": {
+    "default": []
+  },
+  "number_of_applicants": 30,
+  "created_at": {
+    "$date": "2024-02-05T11:01:36.818Z"
+  },
+  "updated_at": {
+    "$date": "2024-02-05T11:01:36.818Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "65c0c010047a8a57573c6091"
+  },
+  "author": {
+    "$oid": "65b737d1c3e0087f9718db8a"
+  },
+  "title": "Customer Support Specialist",
+  "job_position": "Technical Support Analyst",
+  "description": "We are hiring a Technical Support Analyst to provide excellent customer support. Troubleshoot technical issues, assist customers, and collaborate with the support team.",
+  "location": "Chicago",
+  "company": "Customer Solutions Inc.",
+  "job_type": "Full Time",
+  "min_salary": "70000",
+  "max_salary": "90000",
+  "tags": {
+    "default": []
+  },
+  "number_of_applicants": 18,
+  "created_at": {
+    "$date": "2024-02-05T11:01:36.818Z"
+  },
+  "updated_at": {
+    "$date": "2024-02-05T11:01:36.818Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "65c0c010047a8a57573c608f"
+  },
+  "author": {
+    "$oid": "65b737d1c3e0087f9718db8a"
+  },
+  "title": "Quality Assurance Engineer",
+  "job_position": "QA Tester",
+  "description": "Ensure the quality and reliability of our software products as a QA Tester. Create test plans, execute test cases, and collaborate with development teams.",
+  "location": "New York",
+  "company": "QualityTech Solutions",
+  "job_type": "Full Time",
+  "min_salary": "80000",
+  "max_salary": "100000",
+  "tags": {
+    "default": []
+  },
+  "number_of_applicants": 22,
+  "created_at": {
+    "$date": "2024-02-05T11:01:36.818Z"
+  },
+  "updated_at": {
+    "$date": "2024-02-05T11:01:36.818Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "65c0c010047a8a57573c6090"
+  },
+  "author": {
+    "$oid": "65b737d1c3e0087f9718db8a"
+  },
+  "title": "Legal Counsel",
+  "job_position": "Corporate Attorney",
+  "description": "Join our legal team as a Corporate Attorney. Provide legal advice, draft contracts, and ensure compliance with laws and regulations.",
+  "location": "Los Angeles",
+  "company": "Legal Dynamics LLP",
+  "job_type": "Part Time",
+  "min_salary": "120000",
+  "max_salary": "140000",
+  "tags": {
+    "default": []
+  },
+  "number_of_applicants": 15,
+  "created_at": {
+    "$date": "2024-02-05T11:01:36.818Z"
+  },
+  "updated_at": {
+    "$date": "2024-02-05T11:01:36.818Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "65c0c010047a8a57573c6092"
+  },
+  "author": {
+    "$oid": "65b737d1c3e0087f9718db8a"
+  },
+  "title": "Supply Chain Manager",
+  "job_position": "Logistics Coordinator",
+  "description": "Manage the end-to-end supply chain process as a Logistics Coordinator. Responsibilities include inventory management, order fulfillment, and collaboration with suppliers.",
+  "location": "Houston",
+  "company": "Supply Chain Solutions",
+  "job_type": "Part Time",
+  "min_salary": "90000",
+  "max_salary": "110000",
+  "tags": {
+    "default": []
+  },
+  "number_of_applicants": 25,
+  "created_at": {
+    "$date": "2024-02-05T11:01:36.819Z"
+  },
+  "updated_at": {
+    "$date": "2024-02-05T11:01:36.819Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "65c0c010047a8a57573c6093"
+  },
+  "author": {
+    "$oid": "65b737d1c3e0087f9718db8a"
+  },
+  "title": "Healthcare Administrator",
+  "job_position": "Medical Office Manager",
+  "description": "Join our healthcare team as a Medical Office Manager. Oversee daily operations, manage staff, and ensure efficient healthcare services.",
+  "location": "Seattle",
+  "company": "Healthcare Dynamics LLC",
+  "job_type": "Full Time",
+  "min_salary": "80000",
+  "max_salary": "100000",
+  "tags": {
+    "default": []
+  },
+  "number_of_applicants": 20,
+  "created_at": {
+    "$date": "2024-02-05T11:01:36.819Z"
+  },
+  "updated_at": {
+    "$date": "2024-02-05T11:01:36.819Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "65c0c010047a8a57573c6094"
+  },
+  "author": {
+    "$oid": "65b737d1c3e0087f9718db8a"
+  },
+  "title": "Social Media Manager",
+  "job_position": "Content Creation Specialist",
+  "description": "Lead our social media efforts as a Content Creation Specialist. Create engaging content, manage social media channels, and analyze social media performance.",
+  "location": "Denver",
+  "company": "Social Media Solutions",
+  "job_type": "Full Time",
+  "min_salary": "75000",
+  "max_salary": "95000",
+  "tags": {
+    "default": []
+  },
+  "number_of_applicants": 18,
+  "created_at": {
+    "$date": "2024-02-05T11:01:36.819Z"
+  },
+  "updated_at": {
+    "$date": "2024-02-05T11:01:36.819Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "65c0c010047a8a57573c6087"
+  },
+  "author": {
+    "$oid": "65b737d1c3e0087f9718db8a"
+  },
+  "title": "Marketing Manager",
+  "job_position": "Content Marketing Specialist",
+  "description": "Join our marketing team as a Content Marketing Specialist. Develop and execute content strategies, create engaging marketing materials, and contribute to brand awareness and growth.",
+  "location": "Chicago",
+  "company": "Global Marketing Solutions",
+  "job_type": "Part Time",
+  "min_salary": "80000",
+  "max_salary": "100000",
+  "tags": {
+    "default": []
+  },
+  "number_of_applicants": 18,
+  "created_at": {
+    "$date": "2024-02-05T11:01:36.817Z"
+  },
+  "updated_at": {
+    "$date": "2024-02-05T11:01:36.817Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "65c0c010047a8a57573c6088"
+  },
+  "author": {
+    "$oid": "65b737d1c3e0087f9718db8a"
+  },
+  "title": "Financial Analyst",
+  "job_position": "Senior Financial Analyst",
+  "description": "We are hiring a Senior Financial Analyst to provide financial insights and analysis. Responsibilities include budgeting, forecasting, and collaborating with various departments.",
+  "location": "Houston",
+  "company": "Finance Dynamics Inc.",
+  "job_type": "Part Time",
+  "min_salary": "90000",
+  "max_salary": "110000",
+  "tags": {
+    "default": []
+  },
+  "number_of_applicants": 22,
+  "created_at": {
+    "$date": "2024-02-05T11:01:36.817Z"
+  },
+  "updated_at": {
+    "$date": "2024-02-05T11:01:36.817Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "65c0c010047a8a57573c6097"
+  },
+  "author": {
+    "$oid": "65b737d1c3e0087f9718db8a"
+  },
+  "title": "Financial Advisor",
+  "job_position": "Investment Consultant",
+  "description": "Provide financial guidance to clients as an Investment Consultant. Analyze financial situations, recommend investment strategies, and stay informed about market trends.",
+  "location": "Miami",
+  "company": "Financial Strategies LLC",
+  "job_type": "Full Time",
+  "min_salary": "110000",
+  "max_salary": "130000",
+  "tags": {
+    "default": []
+  },
+  "number_of_applicants": 28,
+  "created_at": {
+    "$date": "2024-02-05T11:01:36.819Z"
+  },
+  "updated_at": {
+    "$date": "2024-02-05T11:01:36.819Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "65c0c010047a8a57573c6095"
+  },
+  "author": {
+    "$oid": "65b737d1c3e0087f9718db8a"
+  },
+  "title": "Environmental Scientist",
+  "job_position": "Field Biologist",
+  "description": "Contribute to environmental research and conservation as a Field Biologist. Responsibilities include fieldwork, data collection, and analysis for environmental science projects.",
+  "location": "Austin",
+  "company": "Environmental Research Institute",
+  "job_type": "Part Time",
+  "min_salary": "90000",
+  "max_salary": "110000",
+  "tags": {
+    "default": []
+  },
+  "number_of_applicants": 15,
+  "created_at": {
+    "$date": "2024-02-05T11:01:36.819Z"
+  },
+  "updated_at": {
+    "$date": "2024-02-05T11:01:36.819Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "65c0c010047a8a57573c6096"
+  },
+  "author": {
+    "$oid": "65b737d1c3e0087f9718db8a"
+  },
+  "title": "UX Researcher",
+  "job_position": "User Experience Researcher",
+  "description": "Join our UX research team and contribute to the design process by conducting user research. Experience with usability testing, user interviews, and data analysis is required.",
+  "location": "San Diego",
+  "company": "UX Insights Lab",
+  "job_type": "Part Time",
+  "min_salary": "95000",
+  "max_salary": "115000",
+  "tags": {
+    "default": []
+  },
+  "number_of_applicants": 22,
+  "created_at": {
+    "$date": "2024-02-05T11:01:36.819Z"
+  },
+  "updated_at": {
+    "$date": "2024-02-05T11:01:36.819Z"
+  },
+  "__v": 0
+}]
