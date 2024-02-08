@@ -84,12 +84,20 @@ app.use('/api/v1/article', articleRouter);
 app.use('/api/v1/jobs', jobRouter);
 
 // 3.2 View Routes
-app.use('/',authController.isLoggedIn)
+app.use('/', authController.isLoggedIn);
 app.use('/', viewRouter);
 app.use('/article', articleViewRouter);
 app.use('/jobs', jobViewRouter);
 
 // app.use(globalErrorHandler);
 app.use(globalErrorHandler);
+app.use('*', (req, res, next) => {
+  res.status(404).render('error', {
+    User: res.locals.user,
+    statusCode: 404,
+    title: `404 | Something went wrong!`,
+    msg: 'Page not found.',
+  });
+});
 
 module.exports = app;

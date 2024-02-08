@@ -1,4 +1,4 @@
-<section class=" dark:text-gray-100 ">
+<section class=" ">
   <!-- Search Bar  -->
   <div class="flex flex-row justify-end mx-auto px-6 my-4 sticky top-[5rem]">
     <div class="flex lg:w-96">
@@ -103,6 +103,6 @@
 <script>
   const searchQuery = () => {
     const querystr = document.querySelector('#search-dropdown').value
-    location.assign(`${location.pathname}?search=${querystr}`)  
+    location.replace(`${location.pathname}?search=${querystr}`)
   };
 </script>
