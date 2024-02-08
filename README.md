@@ -1,25 +1,78 @@
 # Find My Way
+   
+   ## Desciption for project (IGNORE)
+   Welcome to Find My Way, a Node.js web application designed to provide valuable information and resources to enhance the living conditions of disabled individuals. Our goal is to empower and support the disabled    community by offering tips, job opportunities, and other relevant information.
 
-## Description
-Welcome to Find My Way, a Node.js web application designed to provide valuable information and resources to enhance the living conditions of disabled individuals. Our goal is to empower and support the disabled community by offering tips, job opportunities, and other relevant information.
+# Description
+Find My Way is a dynamic web application built using Node.js, a powerful JavaScript runtime, renowned for its efficiency and scalability in building server-side applications. Leveraging the Express.js framework, the website ensures rapid development and robust routing capabilities, enabling seamless navigation and efficient handling of HTTP requests.fully responsive to work on both large screen (laptops) and small screen devices ( mobile phones )
 
-## Features
-- **User-Friendly Interface:** The website boasts an intuitive and accessible design to cater to users of all abilities.
-- **Tips and Resources:** Access a wide range of tips and resources aimed at improving the quality of life for disabled individuals.
-- **Job Listings:** Explore job opportunities tailored to the needs and abilities of disabled individuals.
-- **Community Support:** Connect with others in the disabled community for shared experiences and support.
+In addition to its server-side prowess, Find My Way utilizes HTML, CSS, and JavaScript on the client side to deliver a visually appealing and interactive user experience. The frontend is crafted with a combination of modern web technologies, ensuring compatibility across various devices and browsers. Fully responsive design to work on both large screen (laptops) and small screen devices ( mobile phones )
+
+For data storage and retrieval, Find My Way employs MongoDB, a flexible and scalable NoSQL database, ideal for managing diverse datasets with ease. MongoDB's document-based structure allows for efficient storage and retrieval of information, enabling seamless integration with Node.js applications.
+
+Furthermore, Find My Way incorporates various libraries and packages from the Node.js ecosystem to enhance functionality and streamline development. These may include but are not limited to:
+- Node.js: Version 20.0.0 or higher, providing the runtime environment for server-side JavaScript execution.
+- Express: A minimalist web application framework for Node.js, facilitating the creation of robust and scalable web applications and APIs.
+- EJS: A simple and flexible templating engine for rendering dynamic HTML content on the server side.
+- MongoDB: A NoSQL database solution used for storing and managing structured data, offering flexibility and scalability for web applications.
+- Mongoose: An elegant MongoDB object modeling tool for Node.js, providing a schema-based solution to interact with MongoDB databases.
+- Tailwind CSS: Version 3.4.1, a utility-first CSS framework for creating custom designs and responsive layouts with minimal CSS code.
+- JWT: Using JWT token authentication. Self written JWT controller. Present in
+   > Project-App / controller / authController.js
+
+
+## Tech stack
+> - NodeJs >=20.0.1
+> - Tailwind CSS >=3.0.0
+> - Ejs
+> - Mongoose 8
+> - MongoDB
+> - JWT
+> - webpack
 
 ## Installation
 1. Make sure you have [Node.js](https://nodejs.org/) installed on your machine.
 2. Clone the repository:
    ```bash
-   git clone https://github.com/your-username/find-my-way.git](https://github.com/Harsh-nodejs/Project-App.git)https://github.com/Harsh-nodejs/Project-App.git
-   cd Project-App
+   $ gh repo clone Harsh-nodejs/Project-App
+         or
+   $ git clone https://github.com/Harsh-nodejs/Project-App.git
    ```
+   
+   ```
+   $ cd Project-App
+   ```
+
 3. Install the node js depedencies from package.json :
    ```bash
    npm install
    ```
+
+4. After the packages are installed , we can run the server on local host. but first we need a config file with your mongoDb instance.
+   > Change extention of config to config.env and fill the required <DATA>
+   
+5. After configuring the config file and setting up MongoDB use can use the dummy data in >> ./public/Dev-utils/DB data for testing or Demo/ 
+
+   ```
+   .
+   └── Project-App/
+       ├── public/
+       │   └── Dev-util/
+       │       └── DB data for testing or Demo/
+       │           ├── findmyway.articles.json
+       │           ├── findmyway.jobs.json
+       │           └── findmyway.users.json
+       ├── routes
+       ├── utils
+       ├── controller
+       ├── models
+       └── etc.......
+   ```
+6. Now you can run the project useing the following commands:
+   ```bash
+   npm run start
+   ```
+
    
 # Screenshots
  **Landing Page**
@@ -47,4 +100,17 @@ Welcome to Find My Way, a Node.js web application designed to provide valuable i
 
  ## Error Page
  > ![image](https://github.com/Harsh-nodejs/Project-App/assets/153886419/cf479355-cacc-48db-91f2-d663ec4274ce)
+
+   ## Mobile port 
+   ![image](https://github.com/Harsh-nodejs/Project-App/assets/153886419/70ae23c7-4318-4013-af31-ba0062db128c)
+   ![image](https://github.com/Harsh-nodejs/Project-App/assets/153886419/5e2fbd64-c973-4365-acc7-be0988523a7a)
+   ![image](https://github.com/Harsh-nodejs/Project-App/assets/153886419/136f13e4-8990-4d0b-9fdf-ec02e034c87e)
+   ![image](https://github.com/Harsh-nodejs/Project-App/assets/153886419/788cba95-9388-463f-859a-6bf38c3cd0ee)
+   ![image](https://github.com/Harsh-nodejs/Project-App/assets/153886419/8a03988f-c342-45b9-bb86-04397e1b0d93)
+   **Error Page**
+   ![image](https://github.com/Harsh-nodejs/Project-App/assets/153886419/d28081a7-60a2-4221-97d7-c3a1a81d0a70)
+
+
+      
+
 
