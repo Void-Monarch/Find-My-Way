@@ -1001,6 +1001,13 @@ select {
   margin-top: 1.5rem;
 }
 
+<<<<<<< HEAD
+=======
+.-mt-16 {
+  margin-top: -4rem;
+}
+
+>>>>>>> parent of 80cd0d3 (nn)
 .block {
   display: block;
 }
