@@ -16,10 +16,28 @@ Welcome to Find My Way, a Node.js web application designed to provide valuable i
    git clone https://github.com/your-username/find-my-way.git](https://github.com/Harsh-nodejs/Project-App.git)https://github.com/Harsh-nodejs/Project-App.git
    cd Project-App
    ```
+
 3. Install the node js depedencies from package.json :
    ```bash
    npm install
    ```
+
+4. After the packages are installed , we can run the server on local host. but first we need a config file with your mongoDb instance.
+   > Change extention of config to config.env and fill the required <DATA>
+   
+5. After configuring the config file and setting up MongoDB use can use the dummy data in ' ./public/Dev-utils/DB data for testing or Demo/ '
+>  └── Project-App/
+       ├── public/
+       │   └── Dev-util/
+       │       └── DB data for testing or Demo/
+       │           ├── findmyway.articles.json
+       │           ├── findmyway.jobs.json
+       │           └── findmyway.users.json
+       ├── routes
+       ├── utils
+       ├── controller
+       ├── models
+       └── etc.......
    
 # Screenshots
  **Landing Page**
