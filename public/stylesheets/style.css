@@ -917,12 +917,13 @@ select {
   margin-bottom: 1.5rem;
 }
 
-.-ml-10 {
-  margin-left: -2.5rem;
+.mx-4 {
+  margin-left: 1rem;
+  margin-right: 1rem;
 }
 
-.-mt-16 {
-  margin-top: -4rem;
+.-ml-10 {
+  margin-left: -2.5rem;
 }
 
 .mb-10 {
@@ -1001,13 +1002,14 @@ select {
   margin-top: 1.5rem;
 }
 
-<<<<<<< HEAD
-=======
 .-mt-16 {
   margin-top: -4rem;
 }
 
->>>>>>> parent of 80cd0d3 (nn)
+.-mt-24 {
+  margin-top: -6rem;
+}
+
 .block {
   display: block;
 }
@@ -1072,10 +1074,6 @@ select {
   height: 1.25rem;
 }
 
-.h-60 {
-  height: 15rem;
-}
-
 .h-64 {
   height: 16rem;
 }
@@ -1102,6 +1100,10 @@ select {
 
 .h-screen {
   height: 100vh;
+}
+
+.h-60 {
+  height: 15rem;
 }
 
 .max-h-96 {
@@ -1168,10 +1170,6 @@ select {
   min-width: 8rem;
 }
 
-.max-w-3xl {
-  max-width: 48rem;
-}
-
 .max-w-6xl {
   max-width: 72rem;
 }
@@ -1194,6 +1192,10 @@ select {
 
 .max-w-xs {
   max-width: 20rem;
+}
+
+.max-w-3xl {
+  max-width: 48rem;
 }
 
 .flex-1 {
@@ -1598,12 +1600,12 @@ select {
   padding: 1rem;
 }
 
-.p-5 {
-  padding: 1.25rem;
-}
-
 .p-6 {
   padding: 1.5rem;
+}
+
+.p-5 {
+  padding: 1.25rem;
 }
 
 .px-1 {
@@ -1696,10 +1698,6 @@ select {
   padding-bottom: 2rem;
 }
 
-.pb-12 {
-  padding-bottom: 3rem;
-}
-
 .pl-1 {
   padding-left: 0.25rem;
 }
@@ -1714,6 +1712,10 @@ select {
 
 .pt-6 {
   padding-top: 1.5rem;
+}
+
+.pb-12 {
+  padding-bottom: 3rem;
 }
 
 .text-center {
@@ -2214,14 +2216,14 @@ select {
     margin-right: 0px;
   }
 
-  .sm\:mx-12 {
-    margin-left: 3rem;
-    margin-right: 3rem;
-  }
-
   .sm\:mx-auto {
     margin-left: auto;
     margin-right: auto;
+  }
+
+  .sm\:mx-12 {
+    margin-left: 3rem;
+    margin-right: 3rem;
   }
 
   .sm\:mb-0 {
@@ -2322,10 +2324,6 @@ select {
     margin-bottom: calc(1.25rem * var(--tw-space-y-reverse));
   }
 
-  .sm\:p-10 {
-    padding: 2.5rem;
-  }
-
   .sm\:p-20 {
     padding: 5rem;
   }
@@ -2342,9 +2340,8 @@ select {
     padding: 2rem;
   }
 
-  .sm\:px-10 {
-    padding-left: 2.5rem;
-    padding-right: 2.5rem;
+  .sm\:p-10 {
+    padding: 2.5rem;
   }
 
   .sm\:px-5 {
@@ -2355,6 +2352,11 @@ select {
   .sm\:py-12 {
     padding-top: 3rem;
     padding-bottom: 3rem;
+  }
+
+  .sm\:px-10 {
+    padding-left: 2.5rem;
+    padding-right: 2.5rem;
   }
 
   .sm\:text-center {
@@ -2617,12 +2619,12 @@ select {
     width: 24rem;
   }
 
-  .lg\:max-w-2xl {
-    max-width: 42rem;
-  }
-
   .lg\:max-w-md {
     max-width: 28rem;
+  }
+
+  .lg\:max-w-2xl {
+    max-width: 42rem;
   }
 
   .lg\:grid-cols-3 {
@@ -2811,6 +2813,11 @@ select {
   .dark\:bg-gray-900 {
     --tw-bg-opacity: 1;
     background-color: rgb(17 24 39 / var(--tw-bg-opacity));
+  }
+
+  .dark\:bg-gray-500 {
+    --tw-bg-opacity: 1;
+    background-color: rgb(107 114 128 / var(--tw-bg-opacity));
   }
 
   .dark\:text-blue-300 {
