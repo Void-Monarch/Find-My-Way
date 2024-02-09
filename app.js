@@ -83,6 +83,7 @@ app.use((req, res, next) => {
 app.use(
   cors({
     origin: 'https://findmyway.onrender.com',
+    credentials: true,
     exposedHeaders: ['set-cookie'],
   }),
 );
