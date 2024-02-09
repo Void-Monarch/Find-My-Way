@@ -1,5 +1,5 @@
 const express = require('express');
-const cors = require('cors');
+const cors = require('cors'); // CORS read more on it
 const morgan = require('morgan');
 const rateLimit = require('express-rate-limit');
 const helmet = require('helmet');
@@ -83,8 +83,8 @@ app.use((req, res, next) => {
 app.use(
   cors({
     origin: 'https://findmyway.onrender.com',
-    credentials: true,
-    exposedHeaders: ['set-cookie'],
+    credentials: true, // need to dig deeper
+    exposedHeaders: ['set-cookie'], // check more on this option a web usage
   }),
 );
 // 3.1 API Routes
