@@ -80,7 +80,12 @@ app.use((req, res, next) => {
 });
 
 // 3) ROUTES
-app.use(cors({ origin: 'https://findmyway.onrender.com' }));
+app.use(
+  cors({
+    origin: 'https://findmyway.onrender.com',
+    exposedHeaders: ['set-cookie'],
+  }),
+);
 // 3.1 API Routes
 app.use('/api/v1/user', userRouter);
 app.use('/api/v1/article', articleRouter);
