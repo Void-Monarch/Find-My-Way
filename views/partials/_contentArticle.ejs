@@ -103,6 +103,6 @@
 <script>
   const searchQuery = () => {
     const querystr = document.querySelector('#search-dropdown').value
-    location.replace(`${location.pathname}?search=${querystr}`)
+    location.assign(`${location.pathname}?search=${querystr}`)
   };
 </script>
