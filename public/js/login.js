@@ -10,6 +10,7 @@ const login = async (email, password) => {
         email,
         password,
       },
+      withCredentials: true,
     });
     let alertBox = document.querySelector('#login--alert');
 
@@ -159,6 +160,7 @@ const signup = async (name, gender, email, password, passwordConfirm) => {
         password,
         passwordConfirm,
       },
+      withCredentials: true,
     });
     if (res.data.status === 'success') {
       let alertBox = document.querySelector('#signupAlertBOX');
