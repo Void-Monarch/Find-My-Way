@@ -1,4 +1,5 @@
 const express = require('express');
+const cors = require('cors');
 const morgan = require('morgan');
 const rateLimit = require('express-rate-limit');
 const helmet = require('helmet');
@@ -79,6 +80,7 @@ app.use((req, res, next) => {
 });
 
 // 3) ROUTES
+app.use(cors({ origin: 'http://example.com' }));
 // 3.1 API Routes
 app.use('/api/v1/user', userRouter);
 app.use('/api/v1/article', articleRouter);
