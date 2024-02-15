@@ -5,7 +5,7 @@ const login = async (email, password) => {
   try {
     const res = await axios({
       method: 'POST',
-      url: `${window.location.origin}/api/v1/user/login`,
+      url: `https://findmyway.onrender.com/api/v1/user/login`,
       data: {
         email,
         password,
@@ -140,7 +140,7 @@ const logout = async () => {
   try {
     const res = await axios({
       method: 'GET',
-      url: `${window.location.origin}/api/v1/user/logout`,
+      url: `https://findmyway.onrender.com/api/v1/user/logout`,
     });
     if ((res.data.status = 'success')) location.reload(true);
   } catch (err) {
@@ -152,7 +152,7 @@ const signup = async (name, gender, email, password, passwordConfirm) => {
   try {
     const res = await axios({
       method: 'POST',
-      url: `${window.location.origin}/api/v1/user/signup`,
+      url: `https://findmyway.onrender.com/api/v1/user/signup`,
       data: {
         name,
         gender,
