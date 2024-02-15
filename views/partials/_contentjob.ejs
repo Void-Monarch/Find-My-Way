@@ -1,53 +1,54 @@
-<section
-  class="lg:px-6 2xl:px-12 mb-20 relative"
-  id="article_content_section"
-  style="margin-top: -12rem;"
-> 
-  <div
-    class="flex w-full flex-col space-y-4 xss:px-3 md:px-6 py-4 bg-blue-500  min-h-128 "
-    id="acticle--section"
-  >
+<section class="xss:px-1 lg:px-6 2xl:px-12 mb-20 relative" id="article_content_section" style="margin-top: -12rem;">
+  <div class="flex w-full flex-col space-y-4 xss:px-3 md:px-6 py-4 bg-gradient-to-br from-blue-500 via-blue-600 to-blue-700 rounded-lg shadow-lg shadow-blue-500/50  min-h-128 " id="acticle--section">
 
-  <!-- Heading -->
+    <!-- Heading -->
     <div class="flex flox-row self-start translate-x-[5vw] my-20 xss:mx-4 sm:mx-0">
-        <h1 class="xss:text-3xl sm:text-4xl lg:text-6xl pt-6" style="font-family: 'Protest Guerrilla', sans-serif;">Featured <span class="text-orange-400">Jobs</span></h1>
+      <h1 class="xss:text-3xl sm:text-4xl lg:text-6xl pt-6" style="font-family: 'Protest Guerrilla', sans-serif;">
+        Featured <span class="text-orange-400">Jobs</span></h1>
     </div>
     <!-- Heading END -->
     <!-- Article Container -->
     <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 " id="acticleContainer">
 
-      <% Data.forEach(el => { %>
-    <!-- Each Article -->
-    <div class="flex rounded-md bg-white m-4 xss:justify-center md:justify-normal">
-      <div
-        class="flex xss:flex-col sm:flex-row space-x-2 items-center m-[4px]"
-      >
-        <div class="flex w-32 h-24 rounded-sm grow-0 justify-start p-1">
-          <img src="/assets/find-my-way-high-resolution-logo.png" alt="" class="" />
-        </div>
-        <div
-          class="flex flex-col xss:w-max md:w-full h-full justify-around mr-2"
-        >
-          <div class="flex">
-            <h1 class="text-xl font-semibold"><%= el.job_position %></h1>
-          </div>
-          <div class="flex">
-            <h3 class="text-md font-light translate-y-1 xss:pb-2"><%= el.company %> | <%= el.location %></h1>
-          </div>
-          <div class="flex flex-row divide-x divide-slate-300">
-            <div class="flex-0">
-              <span class="bg-green-300 text-green-600 rounded-full me-1 px-2.5 py-0.5 text-sm font-medium transition-all hover:bg-green-500 hover:text-white hover:scale-105 "><%= `${(el.min_salary)/1000}K-${(el.max_salary)/1000}K` %></span>
+      <% Data.forEach(el=> { %>
+        <!-- Each Article -->
+        <div class="flex rounded-md bg-white m-4 xss:justify-center md:justify-normal">
+          <div class="flex xss:flex-col sm:flex-row space-x-2 items-center m-[4px]">
+            <div class="flex w-32 h-24 rounded-sm grow-0 justify-start p-1">
+              <img src="/assets/find-my-way-high-resolution-logo.png" alt="" class="" />
             </div>
-            <div class="flex flex-1">
-              <span class="bg-white text-orange-500 border border-orange-600 rounded-full ml-1 me-2 xss:px-1.5 md:px-2 py-0.5 text-sm font-medium hover:bg-orange-500 hover:text-white hover:border-white hover:scale-105">Hybrid</span>
-              <span class="bg-white text-blue-700 border border-blue-700 rounded-full me-2 xss:px-1.5 md:px-2 py-0.5 text-sm font-medium hover:bg-blue-600 hover:text-white hover:border-white hover:scale-105"><%= el.job_type %></span>
+            <div class="flex flex-col xss:w-max md:w-full h-full justify-around mr-2">
+              <div class="flex">
+                <h1 class="text-xl font-semibold">
+                  <%= el.job_position %>
+                </h1>
+              </div>
+              <div class="flex">
+                <h3 class="text-md font-light translate-y-1 xss:pb-2">
+                  <%= el.company %> | <%= el.location %>
+                      </h1>
+              </div>
+              <div class="flex flex-row divide-x divide-slate-300">
+                <div class="flex-0">
+                  <span
+                    class="bg-green-300 text-green-600 rounded-full me-1 px-2.5 py-0.5 text-sm font-medium transition-all hover:bg-green-500 hover:text-white hover:scale-105 ">
+                    <%= `${(el.min_salary)/1000}K-${(el.max_salary)/1000}K` %>
+                  </span>
+                </div>
+                <div class="flex flex-1">
+                  <span
+                    class="bg-white text-orange-500 border border-orange-600 rounded-full ml-1 me-2 xss:px-1.5 md:px-2 py-0.5 text-sm font-medium hover:bg-orange-500 hover:text-white hover:border-white hover:scale-105">Hybrid</span>
+                  <span
+                    class="bg-white text-blue-700 border border-blue-700 rounded-full me-2 xss:px-1.5 md:px-2 py-0.5 text-sm font-medium hover:bg-blue-600 hover:text-white hover:border-white hover:scale-105">
+                    <%= el.job_type %>
+                  </span>
+                </div>
+              </div>
             </div>
           </div>
         </div>
-      </div>
-    </div>
-    <!-- each article End -->
-  <% }); %>
+        <!-- each article End -->
+        <% }); %>
     </div>
     <!-- article Container end -->
   </div>

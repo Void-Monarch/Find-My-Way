@@ -2,6 +2,7 @@
   "extends": ["airbnb", "prettier", "plugin:node/recommended"],
   "plugins": ["prettier"],
   "rules": {
+    "arrow-body-style":"off", // enforce usage of arrow functions for simple classes
     "strict": "off",
     "prettier/prettier": "off",
     "spaced-comment": "off",
