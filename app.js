@@ -69,7 +69,13 @@ app.use(xss());
 //     ],
 //   }),
 // );
-
+app.use(
+  cors({
+    origin: 'https://findmyway.onrender.com',
+    credentials: true, // need to dig deeper
+    exposedHeaders: ['set-cookie'], // check more on this option a web usage
+  }),
+);
 // Serving static files
 app.use(express.static(`${__dirname}/public`));
 
@@ -80,13 +86,7 @@ app.use((req, res, next) => {
 });
 
 // 3) ROUTES
-app.use(
-  cors({
-    origin: 'https://findmyway.onrender.com',
-    credentials: true, // need to dig deeper
-    exposedHeaders: ['set-cookie'], // check more on this option a web usage
-  }),
-);
+
 // 3.1 API Routes
 app.use('/api/v1/user', userRouter);
 app.use('/api/v1/article', articleRouter);
