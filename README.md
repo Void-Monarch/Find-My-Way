@@ -18,7 +18,7 @@ Furthermore, Find My Way incorporates various libraries and packages from the No
 - Mongoose: An elegant MongoDB object modeling tool for Node.js, providing a schema-based solution to interact with MongoDB databases.
 - Tailwind CSS: Version 3.4.1, a utility-first CSS framework for creating custom designs and responsive layouts with minimal CSS code.
 - JWT: Using JWT token authentication. Self written JWT controller. Present in
-   > Project-App / controller / authController.js
+   > Find-My-Way / controller / authController.js
 
 
 ## Tech stack
@@ -34,13 +34,13 @@ Furthermore, Find My Way incorporates various libraries and packages from the No
 1. Make sure you have [Node.js](https://nodejs.org/) installed on your machine.
 2. Clone the repository:
    ```bash
-   $ gh repo clone Harsh-nodejs/Project-App
+   $ gh repo clone Harsh-nodejs/Find-My-Way
          or
-   $ git clone https://github.com/Harsh-nodejs/Project-App.git
+   $ git clone https://github.com/Harsh-nodejs/Find-My-Way.git
    ```
    
    ```
-   $ cd Project-App
+   $ cd Find-My-Way
    ```
 
 3. Install the node js depedencies from package.json :
@@ -55,7 +55,7 @@ Furthermore, Find My Way incorporates various libraries and packages from the No
 
    ```
    .
-   └── Project-App/
+   └── Find-My-Way/
        ├── public/
        │   └── Dev-util/
        │       └── DB data for testing or Demo/
@@ -68,7 +68,7 @@ Furthermore, Find My Way incorporates various libraries and packages from the No
        ├── models
        └── etc.......
    ```
-6. Now you can run the project useing the following commands:
+6. Now you can run the project using the following commands:
    ```bash
    npm run start
    ```
