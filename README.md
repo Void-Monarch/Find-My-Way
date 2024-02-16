@@ -32,6 +32,7 @@ Furthermore, Find My Way incorporates various libraries and packages from the No
 
 ----
 ### > Demo | Live website : https://findmyway.onrender.com
+      > This might take 1 min or so to load , as I have use free server on render.com .
 
 ## Installation
 1. Make sure you have [Node.js](https://nodejs.org/) installed on your machine.
