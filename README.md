@@ -1,4 +1,5 @@
 ![find-my-way-high-resolution-logo](https://github.com/Void-Monarch/Find-My-Way/assets/153886419/402d8d76-49c2-41da-9ddd-789cf790142a)
+
 ---
 # Find My Way
    
